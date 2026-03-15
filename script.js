@@ -1,6 +1,6 @@
 const map = L.map("map", {
-  center: [35.5, 136.5],
-  zoom: 7,
+  center: [37.0, 137.0],
+  zoom: 6,
   zoomControl: true,
 });
 
@@ -111,7 +111,7 @@ function selectMarker(marker, area) {
   showArea(area);
 }
 
-const cityMap = { "東京": "tokyo", "大阪": "osaka", "名古屋": "nagoya" };
+let regionMap = {};
 let allAreas = [];
 
 function buildTable(areas) {
@@ -122,7 +122,7 @@ function buildTable(areas) {
       const slowCount = area.slow_checks.filter(Boolean).length;
       const traits = area.traits.map((t) => `<span class="table-trait">${t}</span>`).join("");
       const residents = area.residents.join("、");
-      return `<tr data-city="${cityMap[area.city]}" data-name="${area.name}">
+      return `<tr data-city="${regionMap[area.city] || ""}" data-name="${area.name}">
         <td><strong>${area.name}</strong></td>
         <td>${area.city}</td>
         <td><span class="table-type-badge ${area.dating_type}">${typeLabels[area.dating_type]}</span></td>
@@ -156,7 +156,7 @@ function setupFilters() {
       if (filter === "all") {
         buildTable(allAreas);
       } else {
-        buildTable(allAreas.filter((a) => cityMap[a.city] === filter));
+        buildTable(allAreas.filter((a) => regionMap[a.city] === filter));
       }
     });
   });
@@ -167,6 +167,13 @@ async function init() {
   const data = await res.json();
   checklist = data.checklist;
   allAreas = data.areas;
+
+  // Build city → region lookup
+  for (const [region, cities] of Object.entries(data.regions)) {
+    for (const city of cities) {
+      regionMap[city] = region;
+    }
+  }
 
   allAreas.forEach((area) => {
     area.dating_type = classifyArea(area);
