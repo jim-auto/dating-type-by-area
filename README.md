@@ -1,5 +1,7 @@
 # Dating Type by Area
 
+https://jim-auto.github.io/dating-type-by-area/
+
 Dating behavior patterns vary by neighborhood. This project visualizes how local culture, resident demographics, and social infrastructure shape dating behavior into two types: **fast dating** (quick relationship progression) and **slow dating** (gradual relationship progression).
 
 ## Structure
