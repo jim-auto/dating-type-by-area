@@ -13,8 +13,20 @@ const panel = document.getElementById("panel");
 const panelEmpty = document.getElementById("panel-empty");
 const panelContent = document.getElementById("panel-content");
 
+const typeLabels = { fast: "即系", slow: "非即系", mixed: "中間" };
+
 let markers = [];
 let selectedMarker = null;
+let checklist = { fast: [], slow: [] };
+
+function classifyArea(area) {
+  const fastCount = area.fast_checks.filter(Boolean).length;
+  const slowCount = area.slow_checks.filter(Boolean).length;
+  const diff = fastCount - slowCount;
+  if (diff >= 3) return "fast";
+  if (diff <= -3) return "slow";
+  return "mixed";
+}
 
 function createMarkerIcon(type) {
   return L.divIcon({
@@ -32,12 +44,41 @@ function createSelectedIcon(type) {
   });
 }
 
+function renderChecklist(area) {
+  const container = document.getElementById("checklist");
+  const fastItems = checklist.fast
+    .map((label, i) => {
+      const checked = area.fast_checks[i];
+      return `<li class="${checked ? "check-on" : "check-off"}">${checked ? "\u2713" : "\u2717"} ${label}</li>`;
+    })
+    .join("");
+  const slowItems = checklist.slow
+    .map((label, i) => {
+      const checked = area.slow_checks[i];
+      return `<li class="${checked ? "check-on" : "check-off"}">${checked ? "\u2713" : "\u2717"} ${label}</li>`;
+    })
+    .join("");
+
+  const fastCount = area.fast_checks.filter(Boolean).length;
+  const slowCount = area.slow_checks.filter(Boolean).length;
+
+  container.innerHTML = `
+    <div class="check-group">
+      <div class="check-group-header fast">即系要素 <span class="check-count">${fastCount}/5</span></div>
+      <ul>${fastItems}</ul>
+    </div>
+    <div class="check-group">
+      <div class="check-group-header slow">非即系要素 <span class="check-count">${slowCount}/5</span></div>
+      <ul>${slowItems}</ul>
+    </div>
+  `;
+}
+
 function showArea(area) {
   document.getElementById("area-name").textContent = area.name;
   document.getElementById("area-city").textContent = area.city;
 
   const badge = document.getElementById("dating-type");
-  const typeLabels = { fast: "即系", slow: "非即系", mixed: "中間" };
   badge.textContent = typeLabels[area.dating_type];
   badge.className = `dating-type-badge ${area.dating_type}`;
 
@@ -52,6 +93,8 @@ function showArea(area) {
     .join("");
 
   document.getElementById("description").textContent = area.description;
+
+  renderChecklist(area);
 
   panelEmpty.style.display = "none";
   panelContent.classList.add("active");
@@ -75,14 +118,15 @@ function buildTable(areas) {
   const tbody = document.getElementById("area-table-body");
   tbody.innerHTML = areas
     .map((area) => {
-      const typeLabels = { fast: "即系", slow: "非即系", mixed: "中間" };
-      const typeLabel = typeLabels[area.dating_type];
+      const fastCount = area.fast_checks.filter(Boolean).length;
+      const slowCount = area.slow_checks.filter(Boolean).length;
       const traits = area.traits.map((t) => `<span class="table-trait">${t}</span>`).join("");
       const residents = area.residents.join("、");
       return `<tr data-city="${cityMap[area.city]}" data-name="${area.name}">
         <td><strong>${area.name}</strong></td>
         <td>${area.city}</td>
-        <td><span class="table-type-badge ${area.dating_type}">${typeLabel}</span></td>
+        <td><span class="table-type-badge ${area.dating_type}">${typeLabels[area.dating_type]}</span></td>
+        <td class="table-score"><span class="score-fast">${fastCount}</span> - <span class="score-slow">${slowCount}</span></td>
         <td><div class="table-traits">${traits}</div></td>
         <td>${residents}</td>
         <td class="table-description">${area.description}</td>
@@ -121,9 +165,14 @@ function setupFilters() {
 async function init() {
   const res = await fetch("data/areas.json");
   const data = await res.json();
+  checklist = data.checklist;
   allAreas = data.areas;
 
-  data.areas.forEach((area) => {
+  allAreas.forEach((area) => {
+    area.dating_type = classifyArea(area);
+  });
+
+  allAreas.forEach((area) => {
     const marker = L.marker([area.lat, area.lng], {
       icon: createMarkerIcon(area.dating_type),
     }).addTo(map);

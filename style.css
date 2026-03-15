@@ -312,6 +312,66 @@ header .badge {
   font-family: inherit !important;
 }
 
+/* Checklist */
+.check-group {
+  margin-bottom: 12px;
+}
+
+.check-group-header {
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.check-group-header.fast {
+  color: #f47067;
+}
+
+.check-group-header.slow {
+  color: #57ab5a;
+}
+
+.check-count {
+  font-weight: 400;
+  color: #8b949e;
+}
+
+.check-group ul {
+  list-style: none;
+}
+
+.check-group li {
+  font-size: 13px;
+  padding: 3px 0;
+}
+
+.check-on {
+  color: #c9d1d9;
+}
+
+.check-off {
+  color: #484f58;
+}
+
+/* Table score */
+.table-score {
+  white-space: nowrap;
+  text-align: center;
+}
+
+.score-fast {
+  color: #f47067;
+  font-weight: 600;
+}
+
+.score-slow {
+  color: #57ab5a;
+  font-weight: 600;
+}
+
 /* Table section */
 .table-section {
   padding: 32px 24px;
