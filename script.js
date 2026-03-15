@@ -37,7 +37,8 @@ function showArea(area) {
   document.getElementById("area-city").textContent = area.city;
 
   const badge = document.getElementById("dating-type");
-  badge.textContent = area.dating_type === "fast" ? "即系" : "非即系";
+  const typeLabels = { fast: "即系", slow: "非即系", mixed: "中間" };
+  badge.textContent = typeLabels[area.dating_type];
   badge.className = `dating-type-badge ${area.dating_type}`;
 
   const traitsContainer = document.getElementById("traits");
@@ -74,7 +75,8 @@ function buildTable(areas) {
   const tbody = document.getElementById("area-table-body");
   tbody.innerHTML = areas
     .map((area) => {
-      const typeLabel = area.dating_type === "fast" ? "即系" : "非即系";
+      const typeLabels = { fast: "即系", slow: "非即系", mixed: "中間" };
+      const typeLabel = typeLabels[area.dating_type];
       const traits = area.traits.map((t) => `<span class="table-trait">${t}</span>`).join("");
       const residents = area.residents.join("、");
       return `<tr data-city="${cityMap[area.city]}" data-name="${area.name}">

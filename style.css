@@ -120,6 +120,12 @@ header .badge {
   border: 1px solid rgba(46, 160, 67, 0.3);
 }
 
+.dating-type-badge.mixed {
+  background: rgba(210, 153, 34, 0.15);
+  color: #d29922;
+  border: 1px solid rgba(210, 153, 34, 0.3);
+}
+
 .section {
   margin-bottom: 20px;
 }
@@ -212,6 +218,10 @@ header .badge {
   background: #2ea043;
 }
 
+.legend-dot.mixed {
+  background: #d29922;
+}
+
 /* Leaflet overrides */
 .leaflet-container {
   background: #0d1117;
@@ -261,6 +271,11 @@ header .badge {
   box-shadow: 0 0 8px rgba(46, 160, 67, 0.5);
 }
 
+.area-marker.mixed {
+  background: #d29922;
+  box-shadow: 0 0 8px rgba(210, 153, 34, 0.5);
+}
+
 .area-marker.selected {
   border-color: #f0f6fc;
   transform: scale(1.3);
@@ -272,6 +287,10 @@ header .badge {
 
 .area-marker.slow.selected {
   box-shadow: 0 0 16px rgba(46, 160, 67, 0.8);
+}
+
+.area-marker.mixed.selected {
+  box-shadow: 0 0 16px rgba(210, 153, 34, 0.8);
 }
 
 .leaflet-popup-content-wrapper {
@@ -396,6 +415,11 @@ header .badge {
 .table-type-badge.slow {
   background: rgba(46, 160, 67, 0.15);
   color: #57ab5a;
+}
+
+.table-type-badge.mixed {
+  background: rgba(210, 153, 34, 0.15);
+  color: #d29922;
 }
 
 .table-traits {
