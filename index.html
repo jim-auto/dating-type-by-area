@@ -53,6 +53,30 @@
       </div>
     </div>
   </div>
+  <section class="table-section">
+    <h2 class="table-heading">エリア一覧</h2>
+    <div class="table-filters">
+      <button class="filter-btn active" data-filter="all">すべて</button>
+      <button class="filter-btn" data-filter="tokyo">東京</button>
+      <button class="filter-btn" data-filter="osaka">大阪</button>
+      <button class="filter-btn" data-filter="nagoya">名古屋</button>
+    </div>
+    <div class="table-wrapper">
+      <table id="area-table">
+        <thead>
+          <tr>
+            <th>エリア</th>
+            <th>都市</th>
+            <th>タイプ</th>
+            <th>街の特徴</th>
+            <th>住民タイプ</th>
+            <th>説明</th>
+          </tr>
+        </thead>
+        <tbody id="area-table-body"></tbody>
+      </table>
+    </div>
+  </section>
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script src="script.js"></script>
 </body>

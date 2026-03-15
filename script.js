@@ -67,9 +67,59 @@ function selectMarker(marker, area) {
   showArea(area);
 }
 
+const cityMap = { "東京": "tokyo", "大阪": "osaka", "名古屋": "nagoya" };
+let allAreas = [];
+
+function buildTable(areas) {
+  const tbody = document.getElementById("area-table-body");
+  tbody.innerHTML = areas
+    .map((area) => {
+      const typeLabel = area.dating_type === "fast" ? "即系" : "非即系";
+      const traits = area.traits.map((t) => `<span class="table-trait">${t}</span>`).join("");
+      const residents = area.residents.join("、");
+      return `<tr data-city="${cityMap[area.city]}" data-name="${area.name}">
+        <td><strong>${area.name}</strong></td>
+        <td>${area.city}</td>
+        <td><span class="table-type-badge ${area.dating_type}">${typeLabel}</span></td>
+        <td><div class="table-traits">${traits}</div></td>
+        <td>${residents}</td>
+        <td class="table-description">${area.description}</td>
+      </tr>`;
+    })
+    .join("");
+
+  tbody.querySelectorAll("tr").forEach((row) => {
+    row.addEventListener("click", () => {
+      const name = row.dataset.name;
+      const marker = markers.find((m) => m._areaData.name === name);
+      if (marker) {
+        map.setView(marker.getLatLng(), 13);
+        selectMarker(marker, marker._areaData);
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+    });
+  });
+}
+
+function setupFilters() {
+  document.querySelectorAll(".filter-btn").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      document.querySelectorAll(".filter-btn").forEach((b) => b.classList.remove("active"));
+      btn.classList.add("active");
+      const filter = btn.dataset.filter;
+      if (filter === "all") {
+        buildTable(allAreas);
+      } else {
+        buildTable(allAreas.filter((a) => cityMap[a.city] === filter));
+      }
+    });
+  });
+}
+
 async function init() {
   const res = await fetch("data/areas.json");
   const data = await res.json();
+  allAreas = data.areas;
 
   data.areas.forEach((area) => {
     const marker = L.marker([area.lat, area.lng], {
@@ -88,6 +138,9 @@ async function init() {
 
     markers.push(marker);
   });
+
+  buildTable(allAreas);
+  setupFilters();
 }
 
 init();

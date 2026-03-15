@@ -8,8 +8,6 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
   background: #0d1117;
   color: #c9d1d9;
-  height: 100vh;
-  overflow: hidden;
 }
 
 header {
@@ -39,6 +37,7 @@ header .badge {
 .container {
   display: flex;
   height: calc(100vh - 56px);
+  min-height: 500px;
 }
 
 #map {
@@ -292,6 +291,132 @@ header .badge {
   margin: 8px 12px !important;
   font-size: 13px !important;
   font-family: inherit !important;
+}
+
+/* Table section */
+.table-section {
+  padding: 32px 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.table-heading {
+  font-size: 20px;
+  font-weight: 600;
+  color: #f0f6fc;
+  margin-bottom: 16px;
+}
+
+.table-filters {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.filter-btn {
+  background: #21262d;
+  color: #c9d1d9;
+  border: 1px solid #30363d;
+  border-radius: 6px;
+  padding: 6px 14px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.filter-btn:hover {
+  background: #30363d;
+}
+
+.filter-btn.active {
+  background: #388bfd26;
+  color: #58a6ff;
+  border-color: #388bfd;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  border: 1px solid #30363d;
+  border-radius: 6px;
+}
+
+#area-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+#area-table thead {
+  background: #161b22;
+}
+
+#area-table th {
+  text-align: left;
+  padding: 10px 16px;
+  font-weight: 600;
+  color: #8b949e;
+  font-size: 12px;
+  border-bottom: 1px solid #30363d;
+  white-space: nowrap;
+}
+
+#area-table td {
+  padding: 10px 16px;
+  border-bottom: 1px solid #21262d;
+  vertical-align: top;
+}
+
+#area-table tbody tr {
+  cursor: pointer;
+  transition: background 0.1s ease;
+}
+
+#area-table tbody tr:hover {
+  background: #161b22;
+}
+
+#area-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.table-type-badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.table-type-badge.fast {
+  background: rgba(218, 54, 51, 0.15);
+  color: #f47067;
+}
+
+.table-type-badge.slow {
+  background: rgba(46, 160, 67, 0.15);
+  color: #57ab5a;
+}
+
+.table-traits {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.table-trait {
+  font-size: 11px;
+  padding: 2px 7px;
+  border-radius: 10px;
+  background: #21262d;
+  color: #8b949e;
+  white-space: nowrap;
+}
+
+.table-description {
+  max-width: 320px;
+  line-height: 1.5;
+  color: #8b949e;
 }
 
 @media (max-width: 768px) {
