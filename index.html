@@ -1,23 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dating Type by Area</title>
+  <title>エリア別 恋愛行動タイプ</title>
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1>Dating Type by Area</h1>
-    <span class="badge">Japan</span>
+    <h1>エリア別 恋愛行動タイプ</h1>
+    <span class="badge">日本</span>
   </header>
   <div class="container">
     <div id="map"></div>
     <div class="panel" id="panel">
       <div id="panel-empty" class="panel-empty">
         <div class="icon">&#x1F5FA;</div>
-        <p>Select an area on the map<br>to view dating type analysis</p>
+        <p>地図上のエリアをクリックして<br>恋愛行動タイプを確認</p>
       </div>
       <div id="panel-content" class="panel-content">
         <div class="area-header">
@@ -28,26 +28,26 @@
           </div>
         </div>
         <div class="section">
-          <div class="section-title">Area Traits</div>
+          <div class="section-title">街の特徴</div>
           <div class="traits-list" id="traits"></div>
         </div>
         <div class="section">
-          <div class="section-title">Typical Residents</div>
+          <div class="section-title">住民タイプ</div>
           <ul class="residents-list" id="residents"></ul>
         </div>
         <div class="section">
-          <div class="section-title">Explanation</div>
+          <div class="section-title">なぜこのタイプか</div>
           <p class="description" id="description"></p>
         </div>
         <div class="legend">
-          <h3>Legend</h3>
+          <h3>凡例</h3>
           <div class="legend-item">
             <span class="legend-dot fast"></span>
-            Fast dating type — relationships progress quickly
+            即系 — 関係の進展が早い
           </div>
           <div class="legend-item">
             <span class="legend-dot slow"></span>
-            Slow dating type — relationships progress gradually
+            非即系 — 関係の進展がゆっくり
           </div>
         </div>
       </div>

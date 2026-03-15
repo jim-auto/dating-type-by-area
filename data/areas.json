@@ -1,174 +1,174 @@
 {
   "areas": [
     {
-      "name": "Shibuya",
-      "city": "Tokyo",
+      "name": "渋谷",
+      "city": "東京",
       "lat": 35.6595,
       "lng": 139.7005,
       "dating_type": "fast",
-      "traits": ["nightlife", "young population", "tourists", "bar culture"],
-      "residents": ["young professionals", "students", "people who enjoy nightlife"],
-      "description": "High nightlife density and casual social culture make fast dating behavior more common. Shibuya's club scene and izakaya streets create an environment where people connect quickly over drinks and shared energy."
+      "traits": ["ナイトライフ", "若者が多い", "観光客", "バー文化"],
+      "residents": ["若手社会人", "学生", "夜遊び好き"],
+      "description": "ナイトライフの密度が高く、カジュアルな社交文化が根付いている。クラブシーンや居酒屋街があり、お酒と勢いで距離が縮まりやすい環境。"
     },
     {
-      "name": "Shinjuku",
-      "city": "Tokyo",
+      "name": "新宿",
+      "city": "東京",
       "lat": 35.6938,
       "lng": 139.7034,
       "dating_type": "fast",
-      "traits": ["nightlife", "entertainment district", "diverse crowd", "izakaya culture"],
-      "residents": ["office workers", "nightlife enthusiasts", "young adults"],
-      "description": "Japan's largest entertainment district with Kabukicho and Golden Gai. The dense concentration of bars and late-night culture encourages spontaneous connections and fast-paced social interactions."
+      "traits": ["ナイトライフ", "歓楽街", "多様な客層", "居酒屋文化"],
+      "residents": ["会社員", "夜遊び好き", "若者"],
+      "description": "歌舞伎町・ゴールデン街を擁する日本最大の歓楽街。バーの密集度と深夜文化が、その場のノリでの出会いを後押しする。"
     },
     {
-      "name": "Ikebukuro",
-      "city": "Tokyo",
+      "name": "池袋",
+      "city": "東京",
       "lat": 35.7295,
       "lng": 139.7109,
       "dating_type": "fast",
-      "traits": ["young crowd", "entertainment", "affordable nightlife", "casual atmosphere"],
-      "residents": ["students", "young workers", "subculture enthusiasts"],
-      "description": "Affordable entertainment options and a young demographic create a casual dating atmosphere. The area's izakaya streets and karaoke culture make it easy for people to meet and connect quickly."
+      "traits": ["若い客層", "娯楽施設", "リーズナブルな夜遊び", "カジュアル"],
+      "residents": ["学生", "若手社会人", "サブカル好き"],
+      "description": "手頃な娯楽と若い層が集まり、カジュアルな出会いが生まれやすい。居酒屋街やカラオケ文化で、気軽に距離が縮まる。"
     },
     {
-      "name": "Shimokitazawa",
-      "city": "Tokyo",
+      "name": "下北沢",
+      "city": "東京",
       "lat": 35.6613,
       "lng": 139.6680,
       "dating_type": "slow",
-      "traits": ["indie culture", "artistic community", "vintage shops", "live music"],
-      "residents": ["artists", "musicians", "creative professionals", "students"],
-      "description": "The artistic and indie community values authentic connections over casual encounters. Relationships tend to form through shared creative interests, live music events, and repeated visits to small local shops."
+      "traits": ["インディー文化", "アート系コミュニティ", "古着屋", "ライブハウス"],
+      "residents": ["アーティスト", "ミュージシャン", "クリエイター", "学生"],
+      "description": "アートやインディー文化のコミュニティでは、カジュアルな出会いより本物のつながりが重視される。共通の趣味やライブ、小さな店への通いを通じて関係が育まれる。"
     },
     {
-      "name": "Sangenjaya",
-      "city": "Tokyo",
+      "name": "三軒茶屋",
+      "city": "東京",
       "lat": 35.6433,
       "lng": 139.6706,
       "dating_type": "fast",
-      "traits": ["izakaya culture", "local bars", "young professionals", "lively nightlife"],
-      "residents": ["young professionals", "university students", "local regulars"],
-      "description": "Dense concentration of small izakayas and bars creates a neighborhood drinking culture. The intimate bar settings and regular crowd foster quick social connections fueled by alcohol and a friendly atmosphere."
+      "traits": ["居酒屋文化", "地元バー", "若手社会人", "活気ある夜"],
+      "residents": ["若手社会人", "大学生", "常連客"],
+      "description": "小さな居酒屋やバーが密集し、地元の飲み文化が根付いている。アットホームなバーの雰囲気とお酒の力で、すぐに打ち解けやすい。"
     },
     {
-      "name": "Ebisu",
-      "city": "Tokyo",
+      "name": "恵比寿",
+      "city": "東京",
       "lat": 35.6467,
       "lng": 139.7103,
       "dating_type": "slow",
-      "traits": ["upscale dining", "mature crowd", "date spots", "refined atmosphere"],
-      "residents": ["professionals", "couples", "affluent residents"],
-      "description": "Ebisu's sophisticated dining scene and mature demographic favor intentional, date-oriented relationships. People here prefer planned dinners and carefully chosen venues over spontaneous nightlife encounters."
+      "traits": ["高級ダイニング", "大人の客層", "デートスポット", "洗練された雰囲気"],
+      "residents": ["社会人", "カップル", "高所得層"],
+      "description": "洗練されたダイニングシーンと落ち着いた客層が、計画的でデート前提の恋愛を好む。勢い任せの夜遊びより、丁寧に選んだお店でのディナーが主流。"
     },
     {
-      "name": "Kichijoji",
-      "city": "Tokyo",
+      "name": "吉祥寺",
+      "city": "東京",
       "lat": 35.7030,
       "lng": 139.5794,
       "dating_type": "slow",
-      "traits": ["residential", "park culture", "family-friendly", "relaxed lifestyle"],
-      "residents": ["families", "young couples", "long-term residents"],
-      "description": "Inokashira Park and the residential atmosphere create a community-oriented lifestyle. Relationships develop through neighborhood familiarity, local cafes, and shared outdoor activities rather than nightlife."
+      "traits": ["住宅街", "公園文化", "ファミリー向け", "のんびりした暮らし"],
+      "residents": ["ファミリー層", "若いカップル", "長期居住者"],
+      "description": "井の頭公園と住宅街の雰囲気が、コミュニティ志向の暮らしを作っている。ナイトライフではなく、近所付き合いやカフェ、公園での交流から関係が生まれる。"
     },
     {
-      "name": "Namba",
-      "city": "Osaka",
+      "name": "なんば",
+      "city": "大阪",
       "lat": 34.6655,
       "lng": 135.5014,
       "dating_type": "fast",
-      "traits": ["nightlife", "entertainment", "tourists", "Osaka energy"],
-      "residents": ["young adults", "nightlife workers", "tourists"],
-      "description": "Osaka's famous outgoing culture is at its peak in Namba. The Dotonbori energy, dense bar scene, and Osaka's tradition of friendly conversation make spontaneous connections the norm."
+      "traits": ["ナイトライフ", "繁華街", "観光客", "大阪のノリ"],
+      "residents": ["若者", "夜の仕事の人", "観光客"],
+      "description": "大阪の陽気な文化が最も濃いエリア。道頓堀のエネルギー、バーの密集、大阪特有の気さくなコミュニケーションで、その場の勢いで距離が縮まる。"
     },
     {
-      "name": "Shinsaibashi",
-      "city": "Osaka",
+      "name": "心斎橋",
+      "city": "大阪",
       "lat": 34.6751,
       "lng": 135.5008,
       "dating_type": "fast",
-      "traits": ["shopping district", "nightlife", "young fashion crowd", "bar streets"],
-      "residents": ["young professionals", "fashion-conscious youth", "nightlife enthusiasts"],
-      "description": "The Amerikamura area attracts a young, fashion-forward crowd. Combined with nearby bar streets, the area's social energy and Osaka's open communication style encourage fast-paced romantic connections."
+      "traits": ["商業エリア", "ナイトライフ", "若いファッション層", "バー街"],
+      "residents": ["若手社会人", "おしゃれな若者", "夜遊び好き"],
+      "description": "アメリカ村を中心に若くてファッション意識の高い層が集まる。バー街との相乗効果と大阪のオープンなコミュニケーションで、テンポの速い恋愛が起きやすい。"
     },
     {
-      "name": "Umeda",
-      "city": "Osaka",
+      "name": "梅田",
+      "city": "大阪",
       "lat": 34.7024,
       "lng": 135.4959,
       "dating_type": "slow",
-      "traits": ["business district", "upscale dining", "office workers", "department stores"],
-      "residents": ["business professionals", "commuters", "mature adults"],
-      "description": "As Osaka's main business hub, Umeda attracts a professional crowd that prefers structured dating. After-work dinners at upscale restaurants replace the casual bar-hopping found in Namba."
+      "traits": ["ビジネス街", "高級ダイニング", "会社員", "百貨店"],
+      "residents": ["ビジネスパーソン", "通勤者", "大人層"],
+      "description": "大阪の中心ビジネスエリアとして、計画的なデートを好む層が集まる。なんばのようなカジュアルなバー巡りではなく、仕事帰りの上品なディナーが主流。"
     },
     {
-      "name": "Tennoji",
-      "city": "Osaka",
+      "name": "天王寺",
+      "city": "大阪",
       "lat": 34.6532,
       "lng": 135.5065,
       "dating_type": "slow",
-      "traits": ["temple area", "residential mix", "local community", "park culture"],
-      "residents": ["families", "elderly residents", "local workers"],
-      "description": "The presence of Shitennoji Temple and Tennoji Park creates a calm, community-oriented atmosphere. Relationships here develop through local connections and repeated encounters in the neighborhood."
+      "traits": ["寺院エリア", "住宅混在", "地域コミュニティ", "公園文化"],
+      "residents": ["ファミリー層", "高齢者", "地元の勤め人"],
+      "description": "四天王寺や天王寺公園の存在が、穏やかでコミュニティ志向の雰囲気を作っている。地元のつながりや顔なじみの中で、ゆっくり関係が育まれる。"
     },
     {
-      "name": "Kyobashi",
-      "city": "Osaka",
+      "name": "京橋",
+      "city": "大阪",
       "lat": 34.6970,
       "lng": 135.5336,
       "dating_type": "fast",
-      "traits": ["izakaya streets", "after-work drinking", "casual atmosphere", "affordable bars"],
-      "residents": ["office workers", "local regulars", "blue-collar workers"],
-      "description": "Kyobashi's famous izakaya streets create a strong after-work drinking culture. The affordable, no-frills bar scene encourages casual socializing and spontaneous connections among regulars."
+      "traits": ["居酒屋街", "仕事帰りの一杯", "カジュアル", "リーズナブルなバー"],
+      "residents": ["会社員", "常連客", "現場系の人"],
+      "description": "京橋名物の居酒屋街が、強い仕事帰り飲み文化を作っている。飾らないバーの雰囲気が、常連同士のカジュアルな出会いを生みやすい。"
     },
     {
-      "name": "Meieki",
-      "city": "Nagoya",
+      "name": "名駅",
+      "city": "名古屋",
       "lat": 35.1709,
       "lng": 136.8815,
       "dating_type": "slow",
-      "traits": ["business district", "department stores", "commuter hub", "office culture"],
-      "residents": ["business professionals", "commuters", "shoppers"],
-      "description": "Nagoya Station area is primarily a business and transit hub. The professional atmosphere and Nagoya's generally cautious social culture favor planned dates over spontaneous encounters."
+      "traits": ["ビジネス街", "百貨店", "ターミナル駅", "オフィス文化"],
+      "residents": ["ビジネスパーソン", "通勤者", "買い物客"],
+      "description": "名古屋駅周辺はビジネスと交通の中心。堅実な名古屋の社交文化もあり、勢い任せではなく計画的なデートが好まれる。"
     },
     {
-      "name": "Sakae",
-      "city": "Nagoya",
+      "name": "栄",
+      "city": "名古屋",
       "lat": 35.1681,
       "lng": 136.9084,
       "dating_type": "fast",
-      "traits": ["nightlife district", "clubs", "young crowd", "entertainment"],
-      "residents": ["young professionals", "students", "nightlife enthusiasts"],
-      "description": "Sakae is Nagoya's main entertainment district with clubs, bars, and karaoke venues. The concentration of nightlife attracts a younger crowd seeking casual social connections."
+      "traits": ["歓楽街", "クラブ", "若い客層", "娯楽施設"],
+      "residents": ["若手社会人", "学生", "夜遊び好き"],
+      "description": "名古屋最大の歓楽街で、クラブ・バー・カラオケが集中。ナイトライフの密度が若い層を引き寄せ、カジュアルな出会いが起きやすい。"
     },
     {
-      "name": "Osu",
-      "city": "Nagoya",
+      "name": "大須",
+      "city": "名古屋",
       "lat": 35.1580,
       "lng": 136.9020,
       "dating_type": "slow",
-      "traits": ["shopping district", "subculture", "temple area", "vintage shops"],
-      "residents": ["subculture enthusiasts", "students", "local shoppers"],
-      "description": "Osu's unique blend of temple culture and otaku subculture creates a community where relationships form through shared niche interests. The shopping arcade atmosphere favors repeated visits and gradual familiarity."
+      "traits": ["商店街", "サブカルチャー", "寺院エリア", "古着屋"],
+      "residents": ["サブカル好き", "学生", "地元の買い物客"],
+      "description": "寺院文化とオタク・サブカルチャーが融合した独特のエリア。共通のニッチな趣味を通じて関係が生まれ、商店街への通いの中でじわじわと親しくなる。"
     },
     {
-      "name": "Kanayama",
-      "city": "Nagoya",
+      "name": "金山",
+      "city": "名古屋",
       "lat": 35.1495,
       "lng": 136.9005,
       "dating_type": "fast",
-      "traits": ["izakaya area", "transit hub", "after-work drinks", "casual bars"],
-      "residents": ["office workers", "commuters", "local drinkers"],
-      "description": "As a major transit junction with a dense izakaya scene, Kanayama has a strong after-work drinking culture. The casual bar environment and transit convenience make spontaneous social encounters common."
+      "traits": ["居酒屋エリア", "乗り換え駅", "仕事帰りの一杯", "カジュアルなバー"],
+      "residents": ["会社員", "通勤者", "地元の飲み客"],
+      "description": "主要な乗り換え駅に居酒屋が密集し、仕事帰りの飲み文化が強い。カジュアルなバーの雰囲気と交通の便の良さで、その場の出会いが生まれやすい。"
     },
     {
-      "name": "Fushimi",
-      "city": "Nagoya",
+      "name": "伏見",
+      "city": "名古屋",
       "lat": 35.1660,
       "lng": 136.8980,
       "dating_type": "slow",
-      "traits": ["office district", "quiet streets", "upscale bars", "mature atmosphere"],
-      "residents": ["business professionals", "mature adults", "office workers"],
-      "description": "Fushimi's quiet office district atmosphere and upscale dining options attract a mature crowd. The subdued nightlife and professional demographic favor intentional, date-oriented relationships."
+      "traits": ["オフィス街", "静かな通り", "大人向けバー", "落ち着いた雰囲気"],
+      "residents": ["ビジネスパーソン", "大人層", "会社員"],
+      "description": "静かなオフィス街と上品なダイニングが、落ち着いた客層を引き寄せる。控えめなナイトライフと大人の雰囲気が、計画的でデート前提の恋愛を促す。"
     }
   ]
 }

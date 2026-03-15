@@ -37,7 +37,7 @@ function showArea(area) {
   document.getElementById("area-city").textContent = area.city;
 
   const badge = document.getElementById("dating-type");
-  badge.textContent = area.dating_type === "fast" ? "Fast dating type" : "Slow dating type";
+  badge.textContent = area.dating_type === "fast" ? "即系" : "非即系";
   badge.className = `dating-type-badge ${area.dating_type}`;
 
   const traitsContainer = document.getElementById("traits");
