@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dating Type by Area</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Dating Type by Area</h1>
+    <span class="badge">Japan</span>
+  </header>
+  <div class="container">
+    <div id="map"></div>
+    <div class="panel" id="panel">
+      <div id="panel-empty" class="panel-empty">
+        <div class="icon">&#x1F5FA;</div>
+        <p>Select an area on the map<br>to view dating type analysis</p>
+      </div>
+      <div id="panel-content" class="panel-content">
+        <div class="area-header">
+          <h2 id="area-name"></h2>
+          <span class="city" id="area-city"></span>
+          <div>
+            <span id="dating-type" class="dating-type-badge"></span>
+          </div>
+        </div>
+        <div class="section">
+          <div class="section-title">Area Traits</div>
+          <div class="traits-list" id="traits"></div>
+        </div>
+        <div class="section">
+          <div class="section-title">Typical Residents</div>
+          <ul class="residents-list" id="residents"></ul>
+        </div>
+        <div class="section">
+          <div class="section-title">Explanation</div>
+          <p class="description" id="description"></p>
+        </div>
+        <div class="legend">
+          <h3>Legend</h3>
+          <div class="legend-item">
+            <span class="legend-dot fast"></span>
+            Fast dating type — relationships progress quickly
+          </div>
+          <div class="legend-item">
+            <span class="legend-dot slow"></span>
+            Slow dating type — relationships progress gradually
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
