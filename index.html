@@ -88,6 +88,42 @@
       </table>
     </div>
   </section>
+  <section class="criteria-section">
+    <h2 class="table-heading">判定基準</h2>
+    <p class="criteria-description">各エリアを以下のチェックリストで評価し、スコア差で分類しています。</p>
+    <div class="criteria-grid">
+      <div class="criteria-card">
+        <h3 class="criteria-card-title fast">即系チェック（5項目）</h3>
+        <ul class="criteria-list">
+          <li>ナイトライフが徒歩圏</li>
+          <li>繁華街へ電車30分以内</li>
+          <li>一人暮らしが多い</li>
+          <li>居酒屋・バー文化</li>
+          <li>18〜24歳の若者が多い</li>
+        </ul>
+      </div>
+      <div class="criteria-card">
+        <h3 class="criteria-card-title slow">非即系チェック（6項目）</h3>
+        <ul class="criteria-list">
+          <li>ファミリー層が多い</li>
+          <li>落ち着いた住環境</li>
+          <li>デート向き飲食店が多い</li>
+          <li>コミュニティ文化</li>
+          <li>高所得・大人の住民が多い</li>
+          <li>夜職が多い</li>
+        </ul>
+      </div>
+      <div class="criteria-card">
+        <h3 class="criteria-card-title mixed">判定ルール</h3>
+        <ul class="criteria-list">
+          <li>即系数 − 非即系数 ≧ +3 → <strong>即系</strong></li>
+          <li>即系数 − 非即系数 ≦ −3 → <strong>非即系</strong></li>
+          <li>それ以外 → <strong>中間</strong></li>
+        </ul>
+        <p class="criteria-note">繁華街に近すぎると擦れて非即系になる現象（夜職チェック）も考慮。</p>
+      </div>
+    </div>
+  </section>
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script src="script.js"></script>
 </body>
