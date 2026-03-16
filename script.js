@@ -14,9 +14,15 @@ const panelEmpty = document.getElementById("panel-empty");
 const panelContent = document.getElementById("panel-content");
 
 const typeLabels = { fast: "即系", slow: "非即系", mixed: "中間" };
+const typeColors = {
+  fast: "#da3633",
+  slow: "#2ea043",
+  mixed: "#d29922",
+};
 
 let markers = [];
-let selectedMarker = null;
+let polylines = [];
+let selectedItem = null;
 let checklist = { fast: [], slow: [] };
 
 function classifyArea(area) {
@@ -68,7 +74,7 @@ function renderChecklist(area) {
       <ul>${fastItems}</ul>
     </div>
     <div class="check-group">
-      <div class="check-group-header slow">非即系要素 <span class="check-count">${slowCount}/5</span></div>
+      <div class="check-group-header slow">非即系要素 <span class="check-count">${slowCount}/6</span></div>
       <ul>${slowItems}</ul>
     </div>
   `;
@@ -100,14 +106,27 @@ function showArea(area) {
   panelContent.classList.add("active");
 }
 
-function selectMarker(marker, area) {
-  if (selectedMarker) {
-    const prevType = selectedMarker._areaData.dating_type;
-    selectedMarker.setIcon(createMarkerIcon(prevType));
+function deselectCurrent() {
+  if (!selectedItem) return;
+  const prev = selectedItem;
+  const prevType = prev._areaData.dating_type;
+  if (prev._isPolyline) {
+    prev.setStyle({ weight: 4, opacity: 0.7 });
+  } else {
+    prev.setIcon(createMarkerIcon(prevType));
   }
-  marker.setIcon(createSelectedIcon(area.dating_type));
-  selectedMarker = marker;
-  marker._areaData = area;
+  selectedItem = null;
+}
+
+function selectItem(item, area) {
+  deselectCurrent();
+  if (item._isPolyline) {
+    item.setStyle({ weight: 7, opacity: 1 });
+  } else {
+    item.setIcon(createSelectedIcon(area.dating_type));
+  }
+  selectedItem = item;
+  item._areaData = area;
   showArea(area);
 }
 
@@ -122,7 +141,7 @@ function buildTable(areas) {
       const slowCount = area.slow_checks.filter(Boolean).length;
       const traits = area.traits.map((t) => `<span class="table-trait">${t}</span>`).join("");
       const residents = area.residents.join("、");
-      return `<tr data-city="${regionMap[area.city] || ""}" data-name="${area.name}">
+      return `<tr data-region="${regionMap[area.city] || ""}" data-name="${area.name}">
         <td><strong>${area.name}</strong></td>
         <td>${area.city}</td>
         <td><span class="table-type-badge ${area.dating_type}">${typeLabels[area.dating_type]}</span></td>
@@ -137,10 +156,15 @@ function buildTable(areas) {
   tbody.querySelectorAll("tr").forEach((row) => {
     row.addEventListener("click", () => {
       const name = row.dataset.name;
-      const marker = markers.find((m) => m._areaData.name === name);
-      if (marker) {
-        map.setView(marker.getLatLng(), 13);
-        selectMarker(marker, marker._areaData);
+      const item = markers.find((m) => m._areaData.name === name)
+        || polylines.find((p) => p._areaData.name === name);
+      if (item) {
+        if (item._isPolyline) {
+          map.fitBounds(item.getBounds(), { padding: [40, 40] });
+        } else {
+          map.setView(item.getLatLng(), 13);
+        }
+        selectItem(item, item._areaData);
         window.scrollTo({ top: 0, behavior: "smooth" });
       }
     });
@@ -180,21 +204,49 @@ async function init() {
   });
 
   allAreas.forEach((area) => {
-    const marker = L.marker([area.lat, area.lng], {
-      icon: createMarkerIcon(area.dating_type),
-    }).addTo(map);
+    if (area.route) {
+      // Draw polyline for train line areas
+      const color = typeColors[area.dating_type];
+      const line = L.polyline(area.route, {
+        color: color,
+        weight: 4,
+        opacity: 0.7,
+        lineCap: "round",
+        lineJoin: "round",
+      }).addTo(map);
 
-    marker._areaData = area;
+      line._areaData = area;
+      line._isPolyline = true;
 
-    marker.bindTooltip(area.name, {
-      className: "",
-      direction: "top",
-      offset: [0, -10],
-    });
+      line.bindTooltip(area.name, {
+        sticky: true,
+        className: "",
+        direction: "top",
+        offset: [0, -10],
+      });
 
-    marker.on("click", () => selectMarker(marker, area));
+      line.on("click", () => selectItem(line, area));
 
-    markers.push(marker);
+      polylines.push(line);
+    } else {
+      // Draw marker for point areas
+      const marker = L.marker([area.lat, area.lng], {
+        icon: createMarkerIcon(area.dating_type),
+      }).addTo(map);
+
+      marker._areaData = area;
+      marker._isPolyline = false;
+
+      marker.bindTooltip(area.name, {
+        className: "",
+        direction: "top",
+        offset: [0, -10],
+      });
+
+      marker.on("click", () => selectItem(marker, area));
+
+      markers.push(marker);
+    }
   });
 
   buildTable(allAreas);
