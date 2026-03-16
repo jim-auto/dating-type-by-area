@@ -16,7 +16,7 @@ header {
   padding: 12px 24px;
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 16px;
   height: 56px;
 }
 
@@ -26,12 +26,31 @@ header h1 {
   color: #f0f6fc;
 }
 
-header .badge {
-  font-size: 12px;
-  padding: 2px 8px;
-  border-radius: 12px;
-  background: #30363d;
+.header-nav {
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+}
+
+.nav-btn {
+  background: none;
+  border: 1px solid transparent;
+  border-radius: 6px;
   color: #8b949e;
+  font-size: 13px;
+  padding: 4px 10px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.nav-btn:hover {
+  color: #c9d1d9;
+  background: #21262d;
+}
+
+.nav-btn:first-child {
+  color: #c9d1d9;
+  font-weight: 600;
 }
 
 .container {

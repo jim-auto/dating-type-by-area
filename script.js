@@ -251,6 +251,15 @@ async function init() {
 
   buildTable(allAreas);
   setupFilters();
+
+  document.querySelectorAll(".nav-btn").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const lat = parseFloat(btn.dataset.lat);
+      const lng = parseFloat(btn.dataset.lng);
+      const zoom = parseInt(btn.dataset.zoom);
+      map.setView([lat, lng], zoom);
+    });
+  });
 }
 
 init();
