@@ -104,6 +104,11 @@ function showArea(area) {
 
   panelEmpty.style.display = "none";
   panelContent.classList.add("active");
+
+  // On mobile, scroll the panel into view so the user sees the content
+  if (window.innerWidth <= 768) {
+    panel.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
 }
 
 function deselectCurrent() {
@@ -148,7 +153,7 @@ function buildTable(areas) {
         <td class="table-score"><span class="score-fast">${fastCount}</span> - <span class="score-slow">${slowCount}</span></td>
         <td><div class="table-traits">${traits}</div></td>
         <td>${residents}</td>
-        <td class="table-description">${area.description}</td>
+        <td class="table-description col-description">${area.description}</td>
       </tr>`;
     })
     .join("");

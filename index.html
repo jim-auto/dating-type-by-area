@@ -21,12 +21,12 @@
       <button class="nav-btn" data-lat="43.05" data-lng="141.35" data-zoom="13">札幌</button>
       <button class="nav-btn" data-lat="38.26" data-lng="140.87" data-zoom="13">仙台</button>
       <button class="nav-btn" data-lat="35.90" data-lng="139.63" data-zoom="13">埼玉</button>
-      <button class="nav-btn" data-lat="35.41" data-lng="136.76" data-zoom="13">岐阜</button>
     </nav>
   </header>
   <div class="container">
     <div id="map"></div>
     <div class="panel" id="panel">
+      <div class="panel-handle" id="panel-handle"><span></span></div>
       <div id="panel-empty" class="panel-empty">
         <div class="icon">&#x1F5FA;</div>
         <p>地図上のエリアをクリックして<br>恋愛行動タイプを確認</p>
@@ -93,7 +93,7 @@
             <th>即/非即</th>
             <th>街の特徴</th>
             <th>住民タイプ</th>
-            <th>説明</th>
+            <th class="col-description">説明</th>
           </tr>
         </thead>
         <tbody id="area-table-body"></tbody>
