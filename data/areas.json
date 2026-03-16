@@ -17,11 +17,30 @@
     ]
   },
   "regions": {
-    "関東": ["東京", "埼玉", "千葉", "横浜", "川崎"],
-    "中部": ["名古屋", "岐阜"],
-    "関西": ["大阪", "京都", "神戸", "西宮"],
-    "九州": ["福岡"],
-    "北海道・東北": ["札幌", "仙台"]
+    "関東": [
+      "東京",
+      "埼玉",
+      "千葉",
+      "横浜",
+      "川崎"
+    ],
+    "中部": [
+      "名古屋",
+      "岐阜"
+    ],
+    "関西": [
+      "大阪",
+      "京都",
+      "神戸",
+      "西宮"
+    ],
+    "九州": [
+      "福岡"
+    ],
+    "北海道・東北": [
+      "札幌",
+      "仙台"
+    ]
   },
   "areas": [
     {
@@ -29,32 +48,98 @@
       "city": "札幌",
       "lat": 43.0536,
       "lng": 141.3533,
-      "fast_checks": [true, true, true, true, true],
-      "slow_checks": [false, false, false, false, false, true],
-      "traits": ["北海道最大の歓楽街", "居酒屋密集", "深夜文化", "観光客"],
-      "residents": ["若手社会人", "夜の仕事の人", "学生"],
+      "fast_checks": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "slow_checks": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        true
+      ],
+      "traits": [
+        "北海道最大の歓楽街",
+        "居酒屋密集",
+        "深夜文化",
+        "観光客"
+      ],
+      "residents": [
+        "若手社会人",
+        "夜の仕事の人",
+        "学生"
+      ],
       "description": "すすきのに住む人は北海道最大の歓楽街が庭。居酒屋やバーが密集し深夜までの飲み文化が日常。夜職も一定数いるが、それ以上にお酒の場での出会いが圧倒的に多い。"
     },
     {
       "name": "円山",
       "city": "札幌",
       "lat": 43.0527,
-      "lng": 141.3280,
-      "fast_checks": [false, true, true, false, false],
-      "slow_checks": [false, true, true, false, true, false],
-      "traits": ["高級住宅街", "カフェ文化", "すすきのアクセス良好", "落ち着いた街"],
-      "residents": ["高所得層", "若手〜中堅社会人", "おしゃれ志向"],
+      "lng": 141.328,
+      "fast_checks": [
+        false,
+        true,
+        true,
+        false,
+        false
+      ],
+      "slow_checks": [
+        false,
+        true,
+        true,
+        false,
+        true,
+        false
+      ],
+      "traits": [
+        "高級住宅街",
+        "カフェ文化",
+        "すすきのアクセス良好",
+        "落ち着いた街"
+      ],
+      "residents": [
+        "高所得層",
+        "若手〜中堅社会人",
+        "おしゃれ志向"
+      ],
       "description": "札幌屈指のおしゃれエリアで落ち着いた暮らし。地下鉄ですすきのまですぐだが、円山自体はカフェやレストランでの丁寧なデート文化が根付いている。"
     },
     {
       "name": "国分町",
       "city": "仙台",
       "lat": 38.2644,
-      "lng": 140.8710,
-      "fast_checks": [true, true, true, true, true],
-      "slow_checks": [false, false, false, false, false, false],
-      "traits": ["東北最大の歓楽街", "居酒屋街", "学生が多い", "飲み文化"],
-      "residents": ["若手社会人", "学生", "夜遊び好き"],
+      "lng": 140.871,
+      "fast_checks": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "slow_checks": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "traits": [
+        "東北最大の歓楽街",
+        "居酒屋街",
+        "学生が多い",
+        "飲み文化"
+      ],
+      "residents": [
+        "若手社会人",
+        "学生",
+        "夜遊び好き"
+      ],
       "description": "東北最大の歓楽街に住む人は飲み歩きが生活の一部。学都・仙台の学生文化もあり、居酒屋での気さくな出会いからカジュアルに関係が始まる。"
     },
     {
@@ -62,10 +147,32 @@
       "city": "東京",
       "lat": 35.6595,
       "lng": 139.7005,
-      "fast_checks": [true, true, true, true, true],
-      "slow_checks": [false, false, false, false, false, false],
-      "traits": ["ナイトライフ", "若者が多い", "バー文化", "フットワークが軽い住民"],
-      "residents": ["若手社会人", "学生", "夜遊び好き"],
+      "fast_checks": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "slow_checks": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "traits": [
+        "ナイトライフ",
+        "若者が多い",
+        "バー文化",
+        "フットワークが軽い住民"
+      ],
+      "residents": [
+        "若手社会人",
+        "学生",
+        "夜遊び好き"
+      ],
       "description": "渋谷に住む人はナイトライフへのアクセスが日常。地元感覚でクラブや居酒屋に行けるため、自然と出会いの頻度が高く、ノリで距離が縮まりやすい。"
     },
     {
@@ -73,10 +180,33 @@
       "city": "東京",
       "lat": 35.6938,
       "lng": 139.7034,
-      "fast_checks": [true, true, true, true, true],
-      "slow_checks": [false, false, false, false, false, true],
-      "traits": ["歓楽街", "多様な住民", "居酒屋文化", "深夜文化"],
-      "residents": ["会社員", "夜遊び好き", "若者", "夜職の人"],
+      "fast_checks": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "slow_checks": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        true
+      ],
+      "traits": [
+        "歓楽街",
+        "多様な住民",
+        "居酒屋文化",
+        "深夜文化"
+      ],
+      "residents": [
+        "会社員",
+        "夜遊び好き",
+        "若者",
+        "夜職の人"
+      ],
       "description": "歌舞伎町やゴールデン街が徒歩圏内の住民は深夜の飲み歩きが生活の一部。夜職の住民も多いが、それ以上に圧倒的なナイトライフの密度が即系文化を作っている。"
     },
     {
@@ -84,21 +214,66 @@
       "city": "東京",
       "lat": 35.7295,
       "lng": 139.7109,
-      "fast_checks": [true, true, true, true, true],
-      "slow_checks": [false, false, false, false, false, false],
-      "traits": ["若い住民", "リーズナブル", "カジュアル", "娯楽施設"],
-      "residents": ["学生", "若手社会人", "サブカル好き"],
+      "fast_checks": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "slow_checks": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "traits": [
+        "若い住民",
+        "リーズナブル",
+        "カジュアル",
+        "娯楽施設"
+      ],
+      "residents": [
+        "学生",
+        "若手社会人",
+        "サブカル好き"
+      ],
       "description": "家賃が比較的手頃で若い層が多く住む。近所の居酒屋やカラオケが社交の場になり、気軽な出会いからカジュアルに関係が始まりやすい。"
     },
     {
       "name": "下北沢",
       "city": "東京",
       "lat": 35.6613,
-      "lng": 139.6680,
-      "fast_checks": [false, true, true, false, true],
-      "slow_checks": [false, true, false, true, false, false],
-      "traits": ["インディー文化", "アート系コミュニティ", "古着屋", "ライブハウス"],
-      "residents": ["アーティスト", "ミュージシャン", "クリエイター", "学生"],
+      "lng": 139.668,
+      "fast_checks": [
+        false,
+        true,
+        true,
+        false,
+        true
+      ],
+      "slow_checks": [
+        false,
+        true,
+        false,
+        true,
+        false,
+        false
+      ],
+      "traits": [
+        "インディー文化",
+        "アート系コミュニティ",
+        "古着屋",
+        "ライブハウス"
+      ],
+      "residents": [
+        "アーティスト",
+        "ミュージシャン",
+        "クリエイター",
+        "学生"
+      ],
       "description": "渋谷まで1駅で繁華街アクセスは良いが、下北に住む人はアートや音楽など共通の価値観を大切にする。ライブハウスや行きつけの店で顔見知りになり、趣味を通じてゆっくり関係が深まる面もある。"
     },
     {
@@ -106,10 +281,32 @@
       "city": "東京",
       "lat": 35.6433,
       "lng": 139.6706,
-      "fast_checks": [false, true, true, true, false],
-      "slow_checks": [false, false, false, false, false, false],
-      "traits": ["居酒屋文化", "地元バー", "若手社会人", "飲み歩き"],
-      "residents": ["若手社会人", "大学生", "常連客"],
+      "fast_checks": [
+        false,
+        true,
+        true,
+        true,
+        false
+      ],
+      "slow_checks": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "traits": [
+        "居酒屋文化",
+        "地元バー",
+        "若手社会人",
+        "飲み歩き"
+      ],
+      "residents": [
+        "若手社会人",
+        "大学生",
+        "常連客"
+      ],
       "description": "三茶に住む人にとって、近所の小さな居酒屋やバーが「リビングの延長」。渋谷にも近く、常連文化とお酒の力で住民同士がすぐ打ち解ける。25〜30代の社会人が中心。"
     },
     {
@@ -117,21 +314,65 @@
       "city": "東京",
       "lat": 35.6467,
       "lng": 139.7103,
-      "fast_checks": [false, true, true, false, false],
-      "slow_checks": [false, true, true, false, true, false],
-      "traits": ["高級ダイニング", "大人の住民", "デートスポット", "洗練された雰囲気"],
-      "residents": ["社会人", "カップル", "高所得層"],
+      "fast_checks": [
+        false,
+        true,
+        true,
+        false,
+        false
+      ],
+      "slow_checks": [
+        false,
+        true,
+        true,
+        false,
+        true,
+        false
+      ],
+      "traits": [
+        "高級ダイニング",
+        "大人の住民",
+        "デートスポット",
+        "洗練された雰囲気"
+      ],
+      "residents": [
+        "社会人",
+        "カップル",
+        "高所得層"
+      ],
       "description": "渋谷まで1駅で繁華街アクセスは良いが、恵比寿に住む層は経済的にも余裕があり丁寧な恋愛を好む。ただし一人暮らしも多く、渋谷に出れば即系の行動も取りやすい。"
     },
     {
       "name": "吉祥寺",
       "city": "東京",
-      "lat": 35.7030,
+      "lat": 35.703,
       "lng": 139.5794,
-      "fast_checks": [false, true, false, false, false],
-      "slow_checks": [true, true, true, true, false, false],
-      "traits": ["住宅街", "公園文化", "ファミリー向け", "のんびりした暮らし"],
-      "residents": ["ファミリー層", "若いカップル", "長期居住者"],
+      "fast_checks": [
+        false,
+        true,
+        false,
+        false,
+        false
+      ],
+      "slow_checks": [
+        true,
+        true,
+        true,
+        true,
+        false,
+        false
+      ],
+      "traits": [
+        "住宅街",
+        "公園文化",
+        "ファミリー向け",
+        "のんびりした暮らし"
+      ],
+      "residents": [
+        "ファミリー層",
+        "若いカップル",
+        "長期居住者"
+      ],
       "description": "井の頭公園や商店街を中心とした穏やかな暮らし。渋谷まで約20分で繁華街アクセスはあるが、住民はファミリーや落ち着いた層が中心で、時間をかけて関係を育む。"
     },
     {
@@ -139,10 +380,33 @@
       "city": "東京",
       "lat": 35.7054,
       "lng": 139.6494,
-      "fast_checks": [true, true, true, true, true],
-      "slow_checks": [false, false, false, false, false, false],
-      "traits": ["古着屋", "ライブバー", "ボヘミアン", "安い飲み屋"],
-      "residents": ["フリーター", "アーティスト", "バンドマン", "若者"],
+      "fast_checks": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "slow_checks": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "traits": [
+        "古着屋",
+        "ライブバー",
+        "ボヘミアン",
+        "安い飲み屋"
+      ],
+      "residents": [
+        "フリーター",
+        "アーティスト",
+        "バンドマン",
+        "若者"
+      ],
       "description": "家賃が安く自由な空気の街に住む人は、フットワークが軽い。新宿まで中央線で5分。安い飲み屋やライブバーが社交の中心で、その場のノリで人と距離が縮まりやすい。"
     },
     {
@@ -150,10 +414,32 @@
       "city": "東京",
       "lat": 35.6441,
       "lng": 139.6989,
-      "fast_checks": [false, true, true, false, false],
-      "slow_checks": [false, true, true, false, true, false],
-      "traits": ["おしゃれな住宅街", "カフェ文化", "目黒川", "落ち着いた雰囲気"],
-      "residents": ["若手〜中堅社会人", "クリエイター", "おしゃれ志向"],
+      "fast_checks": [
+        false,
+        true,
+        true,
+        false,
+        false
+      ],
+      "slow_checks": [
+        false,
+        true,
+        true,
+        false,
+        true,
+        false
+      ],
+      "traits": [
+        "おしゃれな住宅街",
+        "カフェ文化",
+        "目黒川",
+        "落ち着いた雰囲気"
+      ],
+      "residents": [
+        "若手〜中堅社会人",
+        "クリエイター",
+        "おしゃれ志向"
+      ],
       "description": "渋谷まで東横線1駅で繁華街アクセスは抜群だが、中目黒自体は落ち着いた雰囲気。カフェやレストラン選びにこだわる住民が多く、丁寧な恋愛と即系が共存する。"
     },
     {
@@ -161,10 +447,32 @@
       "city": "東京",
       "lat": 35.7078,
       "lng": 139.6657,
-      "fast_checks": [true, true, true, true, true],
-      "slow_checks": [false, false, false, false, false, false],
-      "traits": ["サブカルチャー", "飲み屋街", "手頃な家賃", "庶民的"],
-      "residents": ["若手社会人", "サブカル好き", "学生"],
+      "fast_checks": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "slow_checks": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "traits": [
+        "サブカルチャー",
+        "飲み屋街",
+        "手頃な家賃",
+        "庶民的"
+      ],
+      "residents": [
+        "若手社会人",
+        "サブカル好き",
+        "学生"
+      ],
       "description": "手頃な家賃と飲み屋街の充実で若い一人暮らしが多い。新宿まで中央線で5分。中野ブロードウェイ周辺のサブカル仲間や飲み屋の常連から、カジュアルに関係が始まる。"
     },
     {
@@ -172,10 +480,32 @@
       "city": "埼玉",
       "lat": 35.9062,
       "lng": 139.6237,
-      "fast_checks": [true, true, true, true, true],
-      "slow_checks": [false, false, false, false, false, false],
-      "traits": ["埼玉最大の繁華街", "居酒屋街", "若い住民", "ターミナル駅"],
-      "residents": ["若手社会人", "学生", "夜遊び好き"],
+      "fast_checks": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "slow_checks": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "traits": [
+        "埼玉最大の繁華街",
+        "居酒屋街",
+        "若い住民",
+        "ターミナル駅"
+      ],
+      "residents": [
+        "若手社会人",
+        "学生",
+        "夜遊び好き"
+      ],
       "description": "埼玉最大の繁華街に住む人はナイトライフが生活圏内。駅周辺の居酒屋街や飲み屋が充実し、都内にも出やすいため、カジュアルな出会いが日常的に起きる。"
     },
     {
@@ -183,21 +513,65 @@
       "city": "埼玉",
       "lat": 35.8585,
       "lng": 139.6455,
-      "fast_checks": [false, true, false, false, false],
-      "slow_checks": [true, true, true, false, true, false],
-      "traits": ["文教地区", "住宅街", "ファミリー層", "落ち着いた街"],
-      "residents": ["ファミリー層", "教育熱心な住民", "中高所得層"],
+      "fast_checks": [
+        false,
+        true,
+        false,
+        false,
+        false
+      ],
+      "slow_checks": [
+        true,
+        true,
+        true,
+        false,
+        true,
+        false
+      ],
+      "traits": [
+        "文教地区",
+        "住宅街",
+        "ファミリー層",
+        "落ち着いた街"
+      ],
+      "residents": [
+        "ファミリー層",
+        "教育熱心な住民",
+        "中高所得層"
+      ],
       "description": "文教地区として知られる落ち着いた住宅街。大宮まで1駅だが、住民はファミリー層や大人が中心で、地に足のついた丁寧な恋愛を好む。"
     },
     {
       "name": "柏",
       "city": "千葉",
-      "lat": 35.8680,
+      "lat": 35.868,
       "lng": 139.9766,
-      "fast_checks": [true, true, true, true, true],
-      "slow_checks": [false, false, false, false, false, false],
-      "traits": ["千葉の渋谷", "居酒屋街", "若者が多い", "駅前繁華街"],
-      "residents": ["若手社会人", "学生", "フリーター"],
+      "fast_checks": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "slow_checks": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "traits": [
+        "千葉の渋谷",
+        "居酒屋街",
+        "若者が多い",
+        "駅前繁華街"
+      ],
+      "residents": [
+        "若手社会人",
+        "学生",
+        "フリーター"
+      ],
       "description": "「千葉の渋谷」と呼ばれる柏に住む人は、駅前の繁華街が遊び場。若い一人暮らしが多く、居酒屋やカラオケでの気軽な出会いからテンポよく関係が始まる。"
     },
     {
@@ -205,10 +579,32 @@
       "city": "横浜",
       "lat": 35.4437,
       "lng": 139.6315,
-      "fast_checks": [true, true, true, true, false],
-      "slow_checks": [false, false, false, false, false, false],
-      "traits": ["横浜の飲み屋街", "はしご酒文化", "庶民的", "ディープ"],
-      "residents": ["若手社会人", "飲み好き", "地元の常連"],
+      "fast_checks": [
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "slow_checks": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "traits": [
+        "横浜の飲み屋街",
+        "はしご酒文化",
+        "庶民的",
+        "ディープ"
+      ],
+      "residents": [
+        "若手社会人",
+        "飲み好き",
+        "地元の常連"
+      ],
       "description": "横浜最大のディープな飲み屋街に住む人にとって、はしご酒は日常。小さなバーや立ち飲み屋が密集し、隣の席の人と自然に会話が始まる。客層は30代以上が中心。"
     },
     {
@@ -216,10 +612,32 @@
       "city": "川崎",
       "lat": 35.5764,
       "lng": 139.6596,
-      "fast_checks": [false, true, false, false, false],
-      "slow_checks": [true, true, false, false, true, false],
-      "traits": ["タワマン", "ファミリー層", "都心アクセス良好", "再開発エリア"],
-      "residents": ["若いファミリー", "共働き世帯", "中高所得層"],
+      "fast_checks": [
+        false,
+        true,
+        false,
+        false,
+        false
+      ],
+      "slow_checks": [
+        true,
+        true,
+        false,
+        false,
+        true,
+        false
+      ],
+      "traits": [
+        "タワマン",
+        "ファミリー層",
+        "都心アクセス良好",
+        "再開発エリア"
+      ],
+      "residents": [
+        "若いファミリー",
+        "共働き世帯",
+        "中高所得層"
+      ],
       "description": "タワマンが立ち並ぶ再開発エリアでファミリー層が多い。渋谷まで東横線で15分と繁華街は近いが、一人暮らしは少なく落ち着いた生活志向の住民が中心。"
     },
     {
@@ -227,21 +645,65 @@
       "city": "岐阜",
       "lat": 35.4134,
       "lng": 136.7589,
-      "fast_checks": [true, true, true, true, false],
-      "slow_checks": [false, false, false, false, false, false],
-      "traits": ["岐阜の繁華街", "スナック文化", "居酒屋", "昭和レトロ"],
-      "residents": ["地元の会社員", "飲み好き", "常連客"],
+      "fast_checks": [
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "slow_checks": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "traits": [
+        "岐阜の繁華街",
+        "スナック文化",
+        "居酒屋",
+        "昭和レトロ"
+      ],
+      "residents": [
+        "地元の会社員",
+        "飲み好き",
+        "常連客"
+      ],
       "description": "岐阜最大の繁華街に住む人は、地元のスナックや居酒屋での人付き合いが日常。昭和レトロな飲み屋街で常連同士の距離が近く、カジュアルな出会いが生まれやすい。"
     },
     {
       "name": "各務原",
       "city": "岐阜",
-      "lat": 35.3990,
+      "lat": 35.399,
       "lng": 136.8483,
-      "fast_checks": [false, true, false, false, false],
-      "slow_checks": [true, true, false, true, false, false],
-      "traits": ["郊外住宅街", "車社会", "ファミリー層", "自然が多い"],
-      "residents": ["ファミリー層", "地元住民", "車通勤者"],
+      "fast_checks": [
+        false,
+        true,
+        false,
+        false,
+        false
+      ],
+      "slow_checks": [
+        true,
+        true,
+        false,
+        true,
+        false,
+        false
+      ],
+      "traits": [
+        "郊外住宅街",
+        "車社会",
+        "ファミリー層",
+        "自然が多い"
+      ],
+      "residents": [
+        "ファミリー層",
+        "地元住民",
+        "車通勤者"
+      ],
       "description": "郊外の住宅街で車社会。岐阜駅・柳ヶ瀬まで電車で20分程度だが、地域のコミュニティや職場の付き合いを通じて、ゆっくり関係を築く傾向が強い。"
     },
     {
@@ -249,10 +711,32 @@
       "city": "名古屋",
       "lat": 35.1709,
       "lng": 136.8815,
-      "fast_checks": [false, true, true, false, false],
-      "slow_checks": [false, false, false, false, true, false],
-      "traits": ["ターミナル駅", "人口が多い", "多様な住民", "ビジネスと娯楽の混在"],
-      "residents": ["ビジネスパーソン", "若手社会人", "通勤者"],
+      "fast_checks": [
+        false,
+        true,
+        true,
+        false,
+        false
+      ],
+      "slow_checks": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "traits": [
+        "ターミナル駅",
+        "人口が多い",
+        "多様な住民",
+        "ビジネスと娯楽の混在"
+      ],
+      "residents": [
+        "ビジネスパーソン",
+        "若手社会人",
+        "通勤者"
+      ],
       "description": "名駅周辺は住民の絶対数が多く、栄まで地下鉄ですぐ。堅実な非即系タイプも多いが、母数の多さと繁華街アクセスの良さで即系の人も一定数いる。"
     },
     {
@@ -260,32 +744,98 @@
       "city": "名古屋",
       "lat": 35.1681,
       "lng": 136.9084,
-      "fast_checks": [true, true, true, true, true],
-      "slow_checks": [false, false, false, false, false, false],
-      "traits": ["歓楽街", "クラブ", "若い住民", "娯楽施設"],
-      "residents": ["若手社会人", "学生", "夜遊び好き"],
+      "fast_checks": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "slow_checks": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "traits": [
+        "歓楽街",
+        "クラブ",
+        "若い住民",
+        "娯楽施設"
+      ],
+      "residents": [
+        "若手社会人",
+        "学生",
+        "夜遊び好き"
+      ],
       "description": "栄に住む人はナイトライフが生活圏内。クラブ・バー・カラオケが徒歩圏にあり、夜の街に出る心理的ハードルが低いため、カジュアルな出会いが日常的。"
     },
     {
       "name": "新栄",
       "city": "名古屋",
       "lat": 35.1655,
-      "lng": 136.9190,
-      "fast_checks": [true, true, true, false, false],
-      "slow_checks": [false, false, false, false, false, true],
-      "traits": ["夜職エリア", "栄の隣", "スナック・バー", "擦れた空気"],
-      "residents": ["夜職の人", "若手社会人", "一人暮らし"],
+      "lng": 136.919,
+      "fast_checks": [
+        true,
+        true,
+        true,
+        false,
+        false
+      ],
+      "slow_checks": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        true
+      ],
+      "traits": [
+        "夜職エリア",
+        "栄の隣",
+        "スナック・バー",
+        "擦れた空気"
+      ],
+      "residents": [
+        "夜職の人",
+        "若手社会人",
+        "一人暮らし"
+      ],
       "description": "栄に隣接し夜職の住民が多いエリア。繁華街が日常すぎて「擦れた」空気があり、ナイトライフに慣れた住民はカジュアルな出会いに冷めている面も。即系の環境は整っているが、住民の意識は必ずしもそうではない。"
     },
     {
       "name": "大須",
       "city": "名古屋",
-      "lat": 35.1580,
-      "lng": 136.9020,
-      "fast_checks": [false, true, true, false, true],
-      "slow_checks": [false, false, false, true, false, false],
-      "traits": ["商店街", "サブカルチャー", "寺院エリア", "古着屋"],
-      "residents": ["サブカル好き", "学生", "地元の買い物客"],
+      "lat": 35.158,
+      "lng": 136.902,
+      "fast_checks": [
+        false,
+        true,
+        true,
+        false,
+        true
+      ],
+      "slow_checks": [
+        false,
+        false,
+        false,
+        true,
+        false,
+        false
+      ],
+      "traits": [
+        "商店街",
+        "サブカルチャー",
+        "寺院エリア",
+        "古着屋"
+      ],
+      "residents": [
+        "サブカル好き",
+        "学生",
+        "地元の買い物客"
+      ],
       "description": "栄まで徒歩・地下鉄1駅で繁華街は近い。若い一人暮らしもいるが、サブカル・商店街のコミュニティ文化が強く、共通の趣味からじっくり関係が始まる面もある。"
     },
     {
@@ -293,32 +843,98 @@
       "city": "名古屋",
       "lat": 35.1495,
       "lng": 136.9005,
-      "fast_checks": [true, true, true, true, false],
-      "slow_checks": [false, false, false, false, false, false],
-      "traits": ["居酒屋エリア", "乗り換え駅", "仕事帰りの一杯", "カジュアル"],
-      "residents": ["会社員", "通勤者", "地元の飲み客"],
+      "fast_checks": [
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "slow_checks": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "traits": [
+        "居酒屋エリア",
+        "乗り換え駅",
+        "仕事帰りの一杯",
+        "カジュアル"
+      ],
+      "residents": [
+        "会社員",
+        "通勤者",
+        "地元の飲み客"
+      ],
       "description": "金山に住む人は駅前の居酒屋街が庭のようなもの。栄にも近く、仕事帰りにふらっと飲みに出る習慣があり、カジュアルなバーの雰囲気でその場の出会いが生まれやすい。"
     },
     {
       "name": "伏見",
       "city": "名古屋",
-      "lat": 35.1660,
-      "lng": 136.8980,
-      "fast_checks": [false, true, true, false, false],
-      "slow_checks": [false, true, true, false, true, false],
-      "traits": ["オフィス街", "静かな通り", "大人向けバー", "栄と名駅の中間"],
-      "residents": ["ビジネスパーソン", "大人層", "会社員"],
+      "lat": 35.166,
+      "lng": 136.898,
+      "fast_checks": [
+        false,
+        true,
+        true,
+        false,
+        false
+      ],
+      "slow_checks": [
+        false,
+        true,
+        true,
+        false,
+        true,
+        false
+      ],
+      "traits": [
+        "オフィス街",
+        "静かな通り",
+        "大人向けバー",
+        "栄と名駅の中間"
+      ],
+      "residents": [
+        "ビジネスパーソン",
+        "大人層",
+        "会社員"
+      ],
       "description": "栄まで1駅、名駅まで1駅と繁華街アクセスは抜群。伏見自体は落ち着いた大人の街で計画的な恋愛を好む層が多いが、一人暮らしも多く即系の行動も取りやすい。"
     },
     {
       "name": "覚王山",
       "city": "名古屋",
       "lat": 35.1725,
-      "lng": 136.9460,
-      "fast_checks": [false, true, false, false, false],
-      "slow_checks": [true, true, false, false, true, false],
-      "traits": ["高級住宅街", "栄へのアクセス良好", "ファミリー層", "カフェ文化"],
-      "residents": ["高所得層", "ファミリー層", "文化人"],
+      "lng": 136.946,
+      "fast_checks": [
+        false,
+        true,
+        false,
+        false,
+        false
+      ],
+      "slow_checks": [
+        true,
+        true,
+        false,
+        false,
+        true,
+        false
+      ],
+      "traits": [
+        "高級住宅街",
+        "栄へのアクセス良好",
+        "ファミリー層",
+        "カフェ文化"
+      ],
+      "residents": [
+        "高所得層",
+        "ファミリー層",
+        "文化人"
+      ],
       "description": "高級住宅街でファミリー層が多く一人暮らしは少ないため非即系の空気が強い。一方で東山線一本で栄に出られるアクセスの良さから、即系の行動も取りやすく両タイプが混在する。"
     },
     {
@@ -326,10 +942,32 @@
       "city": "大阪",
       "lat": 34.6655,
       "lng": 135.5014,
-      "fast_checks": [true, true, true, true, true],
-      "slow_checks": [false, false, false, false, false, false],
-      "traits": ["ナイトライフ", "大阪のノリ", "繁華街", "フットワークが軽い"],
-      "residents": ["若者", "夜の仕事の人", "フリーター"],
+      "fast_checks": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "slow_checks": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "traits": [
+        "ナイトライフ",
+        "大阪のノリ",
+        "繁華街",
+        "フットワークが軽い"
+      ],
+      "residents": [
+        "若者",
+        "夜の仕事の人",
+        "フリーター"
+      ],
       "description": "なんば周辺に住む人は大阪の陽気な空気を最も体現している。道頓堀のエネルギーが日常で、気さくなコミュニケーションから勢いで距離が縮まる。"
     },
     {
@@ -337,10 +975,32 @@
       "city": "大阪",
       "lat": 34.6751,
       "lng": 135.5008,
-      "fast_checks": [true, true, true, true, true],
-      "slow_checks": [false, false, false, false, false, false],
-      "traits": ["ファッション", "ナイトライフ", "アメ村", "バー街"],
-      "residents": ["若手社会人", "おしゃれな若者", "夜遊び好き"],
+      "fast_checks": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "slow_checks": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "traits": [
+        "ファッション",
+        "ナイトライフ",
+        "アメ村",
+        "バー街"
+      ],
+      "residents": [
+        "若手社会人",
+        "おしゃれな若者",
+        "夜遊び好き"
+      ],
       "description": "心斎橋・アメ村エリアに住む人はファッション意識が高く社交的。近場のバー街が生活圏内にあり、大阪のオープンな文化もあって出会いのテンポが速い。"
     },
     {
@@ -348,10 +1008,32 @@
       "city": "大阪",
       "lat": 34.7024,
       "lng": 135.4959,
-      "fast_checks": [false, true, true, false, false],
-      "slow_checks": [false, false, true, false, true, false],
-      "traits": ["ビジネス街", "高級ダイニング", "百貨店", "大人の街"],
-      "residents": ["ビジネスパーソン", "大人層", "高所得層"],
+      "fast_checks": [
+        false,
+        true,
+        true,
+        false,
+        false
+      ],
+      "slow_checks": [
+        false,
+        false,
+        true,
+        false,
+        true,
+        false
+      ],
+      "traits": [
+        "ビジネス街",
+        "高級ダイニング",
+        "百貨店",
+        "大人の街"
+      ],
+      "residents": [
+        "ビジネスパーソン",
+        "大人層",
+        "高所得層"
+      ],
       "description": "なんばまで御堂筋線1本で繁華街アクセスは良い。梅田に住む層はキャリア志向で余裕があり計画的なデートを好むが、一人暮らしも多くなんばに出れば即系の行動も取れる。"
     },
     {
@@ -359,21 +1041,65 @@
       "city": "大阪",
       "lat": 34.6532,
       "lng": 135.5065,
-      "fast_checks": [false, true, false, false, false],
-      "slow_checks": [true, true, false, true, false, false],
-      "traits": ["寺院エリア", "住宅混在", "地域コミュニティ", "公園文化"],
-      "residents": ["ファミリー層", "高齢者", "地元の勤め人"],
+      "fast_checks": [
+        false,
+        true,
+        false,
+        false,
+        false
+      ],
+      "slow_checks": [
+        true,
+        true,
+        false,
+        true,
+        false,
+        false
+      ],
+      "traits": [
+        "寺院エリア",
+        "住宅混在",
+        "地域コミュニティ",
+        "公園文化"
+      ],
+      "residents": [
+        "ファミリー層",
+        "高齢者",
+        "地元の勤め人"
+      ],
       "description": "天王寺に住む人は地域コミュニティとのつながりが強い。なんばまで御堂筋線で10分と近いが、住民はファミリー層や年配が中心で、穏やかな暮らしの中でゆっくり関係が育まれる。"
     },
     {
       "name": "京橋",
       "city": "大阪",
-      "lat": 34.6970,
+      "lat": 34.697,
       "lng": 135.5336,
-      "fast_checks": [true, true, true, true, false],
-      "slow_checks": [false, false, false, false, false, false],
-      "traits": ["居酒屋街", "仕事帰りの一杯", "庶民的", "リーズナブル"],
-      "residents": ["会社員", "常連客", "現場系の人"],
+      "fast_checks": [
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "slow_checks": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "traits": [
+        "居酒屋街",
+        "仕事帰りの一杯",
+        "庶民的",
+        "リーズナブル"
+      ],
+      "residents": [
+        "会社員",
+        "常連客",
+        "現場系の人"
+      ],
       "description": "京橋に住む人にとって居酒屋街は生活の一部。飾らない飲み屋文化と常連コミュニティの中で、気取らずにカジュアルな出会いが生まれる。客層は30代以上が多い。"
     },
     {
@@ -381,10 +1107,32 @@
       "city": "大阪",
       "lat": 34.6937,
       "lng": 135.4857,
-      "fast_checks": [true, true, true, true, false],
-      "slow_checks": [false, false, false, false, false, false],
-      "traits": ["隠れ家バー", "グルメタウン", "若い住民", "飲み歩き文化"],
-      "residents": ["若手社会人", "グルメ好き", "一人暮らし"],
+      "fast_checks": [
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "slow_checks": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "traits": [
+        "隠れ家バー",
+        "グルメタウン",
+        "若い住民",
+        "飲み歩き文化"
+      ],
+      "residents": [
+        "若手社会人",
+        "グルメ好き",
+        "一人暮らし"
+      ],
       "description": "おしゃれな飲食店が密集する福島に住む人は外食・飲み歩きが日常。梅田も徒歩圏。小さなバーやワインバルでの偶然の出会いから関係が始まりやすい。25〜30代が中心。"
     },
     {
@@ -392,21 +1140,65 @@
       "city": "大阪",
       "lat": 34.6714,
       "lng": 135.4942,
-      "fast_checks": [false, true, true, false, false],
-      "slow_checks": [false, true, true, false, false, false],
-      "traits": ["カフェ文化", "セレクトショップ", "おしゃれな住宅街", "落ち着いた雰囲気"],
-      "residents": ["クリエイター", "おしゃれ志向", "若手〜中堅社会人"],
+      "fast_checks": [
+        false,
+        true,
+        true,
+        false,
+        false
+      ],
+      "slow_checks": [
+        false,
+        true,
+        true,
+        false,
+        false,
+        false
+      ],
+      "traits": [
+        "カフェ文化",
+        "セレクトショップ",
+        "おしゃれな住宅街",
+        "落ち着いた雰囲気"
+      ],
+      "residents": [
+        "クリエイター",
+        "おしゃれ志向",
+        "若手〜中堅社会人"
+      ],
       "description": "心斎橋・なんばまで徒歩圏で繁華街アクセスは抜群。堀江自体は落ち着いたカフェ文化だが、一人暮らしも多く、すぐ隣の繁華街に出れば即系の行動も取りやすい。"
     },
     {
       "name": "河原町",
       "city": "京都",
-      "lat": 35.0040,
+      "lat": 35.004,
       "lng": 135.7689,
-      "fast_checks": [true, true, true, true, true],
-      "slow_checks": [false, false, false, false, false, false],
-      "traits": ["木屋町の夜", "大学生が多い", "居酒屋文化", "観光地"],
-      "residents": ["大学生", "若手社会人", "観光業の人"],
+      "fast_checks": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "slow_checks": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "traits": [
+        "木屋町の夜",
+        "大学生が多い",
+        "居酒屋文化",
+        "観光地"
+      ],
+      "residents": [
+        "大学生",
+        "若手社会人",
+        "観光業の人"
+      ],
       "description": "河原町に住む人は木屋町・先斗町の飲み文化が日常。京都は大学の街でもあり、学生を中心とした若い層が居酒屋やバーでカジュアルに出会い、テンポよく関係が進む。"
     },
     {
@@ -414,10 +1206,32 @@
       "city": "神戸",
       "lat": 34.6951,
       "lng": 135.1979,
-      "fast_checks": [true, true, true, true, true],
-      "slow_checks": [false, false, false, false, false, false],
-      "traits": ["神戸の中心繁華街", "バー文化", "おしゃれな若者", "港町文化"],
-      "residents": ["若手社会人", "学生", "夜遊び好き"],
+      "fast_checks": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "slow_checks": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "traits": [
+        "神戸の中心繁華街",
+        "バー文化",
+        "おしゃれな若者",
+        "港町文化"
+      ],
+      "residents": [
+        "若手社会人",
+        "学生",
+        "夜遊び好き"
+      ],
       "description": "神戸最大の繁華街に住む人はバーや居酒屋が生活圏内。港町特有のオープンな空気感と充実したナイトライフで、フットワーク軽く出会いが生まれる。"
     },
     {
@@ -425,10 +1239,32 @@
       "city": "福岡",
       "lat": 33.5902,
       "lng": 130.3985,
-      "fast_checks": [true, true, true, true, true],
-      "slow_checks": [false, false, false, false, false, false],
-      "traits": ["九州最大の繁華街", "中洲が隣接", "屋台文化", "若者が多い"],
-      "residents": ["若手社会人", "学生", "夜遊び好き"],
+      "fast_checks": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "slow_checks": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "traits": [
+        "九州最大の繁華街",
+        "中洲が隣接",
+        "屋台文化",
+        "若者が多い"
+      ],
+      "residents": [
+        "若手社会人",
+        "学生",
+        "夜遊び好き"
+      ],
       "description": "天神に住む人は中洲の歓楽街と屋台文化が日常。福岡特有の気さくさとコンパクトな街の距離感で、出会いから関係の進展までが速い。"
     },
     {
@@ -436,10 +1272,32 @@
       "city": "福岡",
       "lat": 33.5858,
       "lng": 130.3782,
-      "fast_checks": [false, true, true, false, false],
-      "slow_checks": [false, true, true, false, true, false],
-      "traits": ["高級住宅街", "大濠公園", "天神アクセス良好", "落ち着いた街"],
-      "residents": ["高所得層", "若手〜中堅社会人", "おしゃれ志向"],
+      "fast_checks": [
+        false,
+        true,
+        true,
+        false,
+        false
+      ],
+      "slow_checks": [
+        false,
+        true,
+        true,
+        false,
+        true,
+        false
+      ],
+      "traits": [
+        "高級住宅街",
+        "大濠公園",
+        "天神アクセス良好",
+        "落ち着いた街"
+      ],
+      "residents": [
+        "高所得層",
+        "若手〜中堅社会人",
+        "おしゃれ志向"
+      ],
       "description": "大濠公園を中心とした落ち着いた高級エリア。天神まで地下鉄ですぐだが、大濠自体はカフェやレストランでの丁寧なデートを好む住民が多く、両タイプが共存する。"
     },
     {
@@ -447,23 +1305,125 @@
       "city": "東京",
       "lat": 35.6073,
       "lng": 139.6694,
-      "route": [[35.6595,139.7005],[35.6441,139.6989],[35.6283,139.6851],[35.6178,139.6768],[35.6073,139.6694],[35.5900,139.6670]],
-      "fast_checks": [false, true, true, false, false],
-      "slow_checks": [false, true, true, false, true, false],
-      "traits": ["おしゃれ住宅街", "カフェ文化", "渋谷アクセス良好", "自由が丘・学芸大学"],
-      "residents": ["若手〜中堅社会人", "おしゃれ志向", "カップル"],
+      "route": [
+        [
+          35.658,
+          139.7016
+        ],
+        [
+          35.6441,
+          139.6989
+        ],
+        [
+          35.6284,
+          139.6852
+        ],
+        [
+          35.621,
+          139.6778
+        ],
+        [
+          35.6073,
+          139.6694
+        ],
+        [
+          35.5931,
+          139.6644
+        ],
+        [
+          35.5899,
+          139.6641
+        ]
+      ],
+      "fast_checks": [
+        false,
+        true,
+        true,
+        false,
+        false
+      ],
+      "slow_checks": [
+        false,
+        true,
+        true,
+        false,
+        true,
+        false
+      ],
+      "traits": [
+        "おしゃれ住宅街",
+        "カフェ文化",
+        "渋谷アクセス良好",
+        "自由が丘・学芸大学"
+      ],
+      "residents": [
+        "若手〜中堅社会人",
+        "おしゃれ志向",
+        "カップル"
+      ],
       "description": "自由が丘・学芸大学・都立大学など、おしゃれな住宅街が連なる路線。渋谷まで15分で繁華街アクセスはあるが、沿線住民はカフェやレストランでの丁寧なデートを好む大人の層が中心。"
     },
     {
       "name": "田園都市線沿い",
       "city": "東京",
       "lat": 35.5765,
-      "lng": 139.5590,
-      "route": [[35.6115,139.6261],[35.5997,139.6104],[35.5888,139.5930],[35.5765,139.5590],[35.5580,139.5310],[35.5458,139.5172]],
-      "fast_checks": [false, true, false, false, false],
-      "slow_checks": [true, true, false, true, true, false],
-      "traits": ["ニュータウン", "ファミリー層", "たまプラーザ・青葉台", "高所得住宅街"],
-      "residents": ["ファミリー層", "共働き世帯", "中高所得層"],
+      "lng": 139.559,
+      "route": [
+        [
+          35.6115,
+          139.6261
+        ],
+        [
+          35.5998,
+          139.6114
+        ],
+        [
+          35.5856,
+          139.5871
+        ],
+        [
+          35.5779,
+          139.5769
+        ],
+        [
+          35.569,
+          139.5582
+        ],
+        [
+          35.5622,
+          139.5531
+        ],
+        [
+          35.5458,
+          139.5172
+        ]
+      ],
+      "fast_checks": [
+        false,
+        true,
+        false,
+        false,
+        false
+      ],
+      "slow_checks": [
+        true,
+        true,
+        false,
+        true,
+        true,
+        false
+      ],
+      "traits": [
+        "ニュータウン",
+        "ファミリー層",
+        "たまプラーザ・青葉台",
+        "高所得住宅街"
+      ],
+      "residents": [
+        "ファミリー層",
+        "共働き世帯",
+        "中高所得層"
+      ],
       "description": "たまプラーザ・青葉台など計画的に開発された住宅街が並ぶ。渋谷まで30分圏内だが、沿線はファミリー層と高所得の大人が中心。コミュニティ意識が強く、じっくり関係を築く文化。"
     },
     {
@@ -471,11 +1431,66 @@
       "city": "東京",
       "lat": 35.6404,
       "lng": 139.5985,
-      "route": [[35.6613,139.6680],[35.6490,139.6440],[35.6404,139.5985],[35.6350,139.5800],[35.6300,139.5640]],
-      "fast_checks": [false, true, false, false, false],
-      "slow_checks": [true, true, false, true, true, false],
-      "traits": ["成城学園前・登戸", "閑静な住宅街", "高級住宅地混在", "通勤路線"],
-      "residents": ["ファミリー層", "高所得層", "長期居住者"],
+      "route": [
+        [
+          35.6613,
+          139.668
+        ],
+        [
+          35.6521,
+          139.6498
+        ],
+        [
+          35.6467,
+          139.6382
+        ],
+        [
+          35.6416,
+          139.6098
+        ],
+        [
+          35.6344,
+          139.5893
+        ],
+        [
+          35.6308,
+          139.5722
+        ],
+        [
+          35.6244,
+          139.556
+        ],
+        [
+          35.6038,
+          139.5076
+        ]
+      ],
+      "fast_checks": [
+        false,
+        true,
+        false,
+        false,
+        false
+      ],
+      "slow_checks": [
+        true,
+        true,
+        false,
+        true,
+        true,
+        false
+      ],
+      "traits": [
+        "成城学園前・登戸",
+        "閑静な住宅街",
+        "高級住宅地混在",
+        "通勤路線"
+      ],
+      "residents": [
+        "ファミリー層",
+        "高所得層",
+        "長期居住者"
+      ],
       "description": "成城学園前の高級住宅地から登戸・町田の庶民的エリアまで幅広い。新宿まで20分だが、沿線全体としてファミリー層が多く、コミュニティの中でゆっくり関係が育まれる。"
     },
     {
@@ -483,23 +1498,125 @@
       "city": "東京",
       "lat": 35.6518,
       "lng": 139.5404,
-      "route": [[35.6689,139.6515],[35.6600,139.6100],[35.6518,139.5404],[35.6600,139.5000],[35.6721,139.4775]],
-      "fast_checks": [false, true, false, false, false],
-      "slow_checks": [true, true, false, true, false, false],
-      "traits": ["調布・府中", "郊外住宅街", "自然が多い", "庶民的"],
-      "residents": ["ファミリー層", "地元住民", "通勤者"],
+      "route": [
+        [
+          35.672,
+          139.6531
+        ],
+        [
+          35.6673,
+          139.6337
+        ],
+        [
+          35.6659,
+          139.6015
+        ],
+        [
+          35.6518,
+          139.5447
+        ],
+        [
+          35.6646,
+          139.4775
+        ],
+        [
+          35.6556,
+          139.4473
+        ],
+        [
+          35.6502,
+          139.447
+        ]
+      ],
+      "fast_checks": [
+        false,
+        true,
+        false,
+        false,
+        false
+      ],
+      "slow_checks": [
+        true,
+        true,
+        false,
+        true,
+        false,
+        false
+      ],
+      "traits": [
+        "調布・府中",
+        "郊外住宅街",
+        "自然が多い",
+        "庶民的"
+      ],
+      "residents": [
+        "ファミリー層",
+        "地元住民",
+        "通勤者"
+      ],
       "description": "調布・府中・聖蹟桜ヶ丘など郊外住宅街が続く。新宿まで20分で繁華街アクセスはあるが、沿線はファミリー層が多く、地域の付き合いの中でゆっくり関係を築く傾向。"
     },
     {
       "name": "西武池袋線沿い",
       "city": "東京",
       "lat": 35.7435,
-      "lng": 139.6060,
-      "route": [[35.7295,139.7109],[35.7382,139.6536],[35.7435,139.6060],[35.7549,139.5476],[35.7857,139.4691]],
-      "fast_checks": [false, true, false, false, false],
-      "slow_checks": [true, true, false, true, false, false],
-      "traits": ["練馬・石神井公園・所沢", "庶民的住宅街", "公園が多い", "のんびり"],
-      "residents": ["ファミリー層", "地元住民", "通勤者"],
+      "lng": 139.606,
+      "route": [
+        [
+          35.7295,
+          139.7109
+        ],
+        [
+          35.7382,
+          139.6536
+        ],
+        [
+          35.7319,
+          139.6169
+        ],
+        [
+          35.7435,
+          139.5605
+        ],
+        [
+          35.75,
+          139.535
+        ],
+        [
+          35.7549,
+          139.5095
+        ],
+        [
+          35.7711,
+          139.4691
+        ]
+      ],
+      "fast_checks": [
+        false,
+        true,
+        false,
+        false,
+        false
+      ],
+      "slow_checks": [
+        true,
+        true,
+        false,
+        true,
+        false,
+        false
+      ],
+      "traits": [
+        "練馬・石神井公園・所沢",
+        "庶民的住宅街",
+        "公園が多い",
+        "のんびり"
+      ],
+      "residents": [
+        "ファミリー層",
+        "地元住民",
+        "通勤者"
+      ],
       "description": "練馬・石神井公園・所沢と庶民的な住宅街が続く。池袋まで20分で繁華街は近いが、沿線はファミリー層が中心。公園が多くのんびりした雰囲気で、地域コミュニティの中での出会いが主流。"
     },
     {
@@ -507,11 +1624,58 @@
       "city": "西宮",
       "lat": 34.7391,
       "lng": 135.3612,
-      "route": [[34.7055,135.4983],[34.7200,135.4400],[34.7391,135.3612],[34.7427,135.3328],[34.7437,135.3101]],
-      "fast_checks": [false, true, false, false, false],
-      "slow_checks": [true, true, true, false, true, false],
-      "traits": ["西宮北口・夙川", "上品な住宅街", "教育熱心", "関西屈指の高級エリア"],
-      "residents": ["高所得層", "ファミリー層", "教育熱心な住民"],
+      "route": [
+        [
+          34.723,
+          135.4826
+        ],
+        [
+          34.7348,
+          135.4462
+        ],
+        [
+          34.7391,
+          135.3612
+        ],
+        [
+          34.7427,
+          135.3416
+        ],
+        [
+          34.7413,
+          135.3161
+        ],
+        [
+          34.7437,
+          135.2979
+        ]
+      ],
+      "fast_checks": [
+        false,
+        true,
+        false,
+        false,
+        false
+      ],
+      "slow_checks": [
+        true,
+        true,
+        true,
+        false,
+        true,
+        false
+      ],
+      "traits": [
+        "西宮北口・夙川",
+        "上品な住宅街",
+        "教育熱心",
+        "関西屈指の高級エリア"
+      ],
+      "residents": [
+        "高所得層",
+        "ファミリー層",
+        "教育熱心な住民"
+      ],
       "description": "西宮北口・夙川・芦屋と関西屈指の上品な住宅街が並ぶ。三宮・梅田まで15分で繁華街アクセスはあるが、沿線住民は生活にゆとりがあり、計画的でデート前提の恋愛を好む。"
     },
     {
@@ -519,11 +1683,58 @@
       "city": "大阪",
       "lat": 34.8093,
       "lng": 135.4707,
-      "route": [[34.7569,135.4947],[34.7700,135.4880],[34.7850,135.4820],[34.8093,135.4707]],
-      "fast_checks": [false, true, false, false, false],
-      "slow_checks": [true, true, false, true, true, false],
-      "traits": ["千里ニュータウン", "桃山台・千里中央", "計画都市", "緑が多い"],
-      "residents": ["ファミリー層", "シニア層", "高所得層"],
+      "route": [
+        [
+          34.7569,
+          135.4947
+        ],
+        [
+          34.772,
+          135.492
+        ],
+        [
+          34.783,
+          135.488
+        ],
+        [
+          34.792,
+          135.483
+        ],
+        [
+          34.801,
+          135.475
+        ],
+        [
+          34.8093,
+          135.4707
+        ]
+      ],
+      "fast_checks": [
+        false,
+        true,
+        false,
+        false,
+        false
+      ],
+      "slow_checks": [
+        true,
+        true,
+        false,
+        true,
+        true,
+        false
+      ],
+      "traits": [
+        "千里ニュータウン",
+        "桃山台・千里中央",
+        "計画都市",
+        "緑が多い"
+      ],
+      "residents": [
+        "ファミリー層",
+        "シニア層",
+        "高所得層"
+      ],
       "description": "千里ニュータウンを中心とした計画的な住宅街。梅田まで御堂筋線直通で30分だが、沿線はファミリーとシニアが中心。ニュータウンのコミュニティ文化の中で、ゆっくり関係が育まれる。"
     },
     {
@@ -531,11 +1742,62 @@
       "city": "名古屋",
       "lat": 35.1751,
       "lng": 136.9713,
-      "route": [[35.1625,136.9460],[35.1609,136.9565],[35.1580,136.9700],[35.1630,136.9880],[35.1816,137.0041]],
-      "fast_checks": [false, true, false, false, false],
-      "slow_checks": [true, true, false, true, false, false],
-      "traits": ["一社・藤が丘", "郊外住宅街", "ベッドタウン", "車社会混在"],
-      "residents": ["ファミリー層", "通勤者", "地元住民"],
+      "route": [
+        [
+          35.1725,
+          136.946
+        ],
+        [
+          35.17,
+          136.9565
+        ],
+        [
+          35.1668,
+          136.97
+        ],
+        [
+          35.166,
+          136.9802
+        ],
+        [
+          35.17,
+          136.989
+        ],
+        [
+          35.175,
+          136.996
+        ],
+        [
+          35.1816,
+          137.0041
+        ]
+      ],
+      "fast_checks": [
+        false,
+        true,
+        false,
+        false,
+        false
+      ],
+      "slow_checks": [
+        true,
+        true,
+        false,
+        true,
+        false,
+        false
+      ],
+      "traits": [
+        "一社・藤が丘",
+        "郊外住宅街",
+        "ベッドタウン",
+        "車社会混在"
+      ],
+      "residents": [
+        "ファミリー層",
+        "通勤者",
+        "地元住民"
+      ],
       "description": "一社・星ヶ丘・藤が丘と住宅街が続く。栄まで東山線で20分と繁華街アクセスはあるが、沿線はファミリー層が多く、地域のコミュニティや職場の付き合いから関係が始まる傾向。"
     },
     {
@@ -543,23 +1805,121 @@
       "city": "福岡",
       "lat": 33.5621,
       "lng": 130.4143,
-      "route": [[33.5902,130.3985],[33.5750,130.4060],[33.5621,130.4143],[33.5490,130.4275],[33.5280,130.4600]],
-      "fast_checks": [false, true, false, false, false],
-      "slow_checks": [true, true, false, true, false, false],
-      "traits": ["大橋・春日", "住宅街", "天神アクセス良好", "ベッドタウン"],
-      "residents": ["ファミリー層", "通勤者", "地元住民"],
+      "route": [
+        [
+          33.5902,
+          130.3985
+        ],
+        [
+          33.5804,
+          130.3982
+        ],
+        [
+          33.571,
+          130.4028
+        ],
+        [
+          33.562,
+          130.4143
+        ],
+        [
+          33.548,
+          130.423
+        ],
+        [
+          33.535,
+          130.435
+        ]
+      ],
+      "fast_checks": [
+        false,
+        true,
+        false,
+        false,
+        false
+      ],
+      "slow_checks": [
+        true,
+        true,
+        false,
+        true,
+        false,
+        false
+      ],
+      "traits": [
+        "大橋・春日",
+        "住宅街",
+        "天神アクセス良好",
+        "ベッドタウン"
+      ],
+      "residents": [
+        "ファミリー層",
+        "通勤者",
+        "地元住民"
+      ],
       "description": "大橋・春日・二日市と住宅街が続く。天神まで西鉄で10〜20分と繁華街は近いが、沿線はファミリー層が中心。地域のコミュニティの中でゆっくり関係を築く傾向が強い。"
     },
     {
       "name": "JR中央線沿い（立川方面）",
       "city": "東京",
-      "lat": 35.7010,
+      "lat": 35.701,
       "lng": 139.4807,
-      "route": [[35.7030,139.5794],[35.7027,139.5606],[35.7010,139.5084],[35.7002,139.4807],[35.6981,139.4138]],
-      "fast_checks": [false, true, false, false, false],
-      "slow_checks": [true, true, false, true, false, false],
-      "traits": ["三鷹・国分寺・立川", "郊外住宅街", "自然が多い", "ファミリー層"],
-      "residents": ["ファミリー層", "通勤者", "長期居住者"],
+      "route": [
+        [
+          35.703,
+          139.5794
+        ],
+        [
+          35.7027,
+          139.5606
+        ],
+        [
+          35.7015,
+          139.5272
+        ],
+        [
+          35.701,
+          139.5084
+        ],
+        [
+          35.7002,
+          139.4807
+        ],
+        [
+          35.699,
+          139.446
+        ],
+        [
+          35.6981,
+          139.4138
+        ]
+      ],
+      "fast_checks": [
+        false,
+        true,
+        false,
+        false,
+        false
+      ],
+      "slow_checks": [
+        true,
+        true,
+        false,
+        true,
+        false,
+        false
+      ],
+      "traits": [
+        "三鷹・国分寺・立川",
+        "郊外住宅街",
+        "自然が多い",
+        "ファミリー層"
+      ],
+      "residents": [
+        "ファミリー層",
+        "通勤者",
+        "長期居住者"
+      ],
       "description": "吉祥寺より西の中央線沿いは郊外住宅街。新宿まで中央特快で20〜30分だが、沿線はファミリー層が多く、公園や自然の中でゆったりとした暮らし。地域の付き合いから関係が生まれる。"
     },
     {
@@ -567,11 +1927,58 @@
       "city": "東京",
       "lat": 35.6244,
       "lng": 139.7036,
-      "route": [[35.6338,139.7158],[35.6300,139.7080],[35.6244,139.7036],[35.6190,139.6960],[35.6070,139.6857]],
-      "fast_checks": [false, true, true, true, false],
-      "slow_checks": [false, true, true, false, false, false],
-      "traits": ["武蔵小山・西小山", "商店街", "グルメ", "下町とおしゃれの融合"],
-      "residents": ["若手〜中堅社会人", "一人暮らし", "グルメ好き"],
+      "route": [
+        [
+          35.6338,
+          139.7158
+        ],
+        [
+          35.6298,
+          139.7097
+        ],
+        [
+          35.6244,
+          139.7036
+        ],
+        [
+          35.6192,
+          139.6977
+        ],
+        [
+          35.612,
+          139.6903
+        ],
+        [
+          35.607,
+          139.6857
+        ]
+      ],
+      "fast_checks": [
+        false,
+        true,
+        true,
+        true,
+        false
+      ],
+      "slow_checks": [
+        false,
+        true,
+        true,
+        false,
+        false,
+        false
+      ],
+      "traits": [
+        "武蔵小山・西小山",
+        "商店街",
+        "グルメ",
+        "下町とおしゃれの融合"
+      ],
+      "residents": [
+        "若手〜中堅社会人",
+        "一人暮らし",
+        "グルメ好き"
+      ],
       "description": "武蔵小山の活気ある商店街と飲み屋街が沿線の個性。目黒・渋谷に近く一人暮らしも多いが、落ち着いた住宅街の面もあり、カジュアルな出会いと丁寧な恋愛が共存する。"
     },
     {
@@ -579,11 +1986,58 @@
       "city": "東京",
       "lat": 35.5625,
       "lng": 139.7159,
-      "route": [[35.6284,139.7387],[35.6100,139.7420],[35.5625,139.7159],[35.5320,139.6990]],
-      "fast_checks": [true, true, true, true, false],
-      "slow_checks": [false, false, false, false, false, false],
-      "traits": ["蒲田・川崎", "庶民的飲み屋街", "安い居酒屋", "ディープ"],
-      "residents": ["会社員", "現場系の人", "一人暮らし"],
+      "route": [
+        [
+          35.6284,
+          139.7387
+        ],
+        [
+          35.6158,
+          139.7433
+        ],
+        [
+          35.5948,
+          139.7234
+        ],
+        [
+          35.5625,
+          139.7159
+        ],
+        [
+          35.544,
+          139.7
+        ],
+        [
+          35.532,
+          139.699
+        ]
+      ],
+      "fast_checks": [
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "slow_checks": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "traits": [
+        "蒲田・川崎",
+        "庶民的飲み屋街",
+        "安い居酒屋",
+        "ディープ"
+      ],
+      "residents": [
+        "会社員",
+        "現場系の人",
+        "一人暮らし"
+      ],
       "description": "蒲田・京急川崎と庶民的な飲み屋街が続く。安い居酒屋が密集しディープな飲み文化が根付いている。品川にも近く、飾らない雰囲気でカジュアルな出会いが生まれやすい。"
     },
     {
@@ -591,11 +2045,54 @@
       "city": "東京",
       "lat": 35.7778,
       "lng": 139.7209,
-      "route": [[35.7520,139.7372],[35.7778,139.7209],[35.8074,139.7209],[35.8265,139.6797]],
-      "fast_checks": [false, true, true, true, false],
-      "slow_checks": [true, false, false, false, false, false],
-      "traits": ["赤羽・川口", "せんべろ文化", "手頃な家賃", "下町"],
-      "residents": ["若手社会人", "ファミリー層", "地元住民"],
+      "route": [
+        [
+          35.752,
+          139.7372
+        ],
+        [
+          35.7778,
+          139.7209
+        ],
+        [
+          35.7956,
+          139.721
+        ],
+        [
+          35.8074,
+          139.7209
+        ],
+        [
+          35.8265,
+          139.6797
+        ]
+      ],
+      "fast_checks": [
+        false,
+        true,
+        true,
+        true,
+        false
+      ],
+      "slow_checks": [
+        true,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "traits": [
+        "赤羽・川口",
+        "せんべろ文化",
+        "手頃な家賃",
+        "下町"
+      ],
+      "residents": [
+        "若手社会人",
+        "ファミリー層",
+        "地元住民"
+      ],
       "description": "赤羽のせんべろ飲み屋街が沿線の顔。安くて気軽に飲める文化が根付いている。川口・蕨はファミリーも多いが、赤羽の飲み文化の影響で沿線全体にカジュアルな社交性がある。"
     },
     {
@@ -603,11 +2100,62 @@
       "city": "埼玉",
       "lat": 35.8316,
       "lng": 139.5775,
-      "route": [[35.7295,139.7109],[35.7873,139.6124],[35.7976,139.5836],[35.8316,139.5775],[35.9062,139.4857]],
-      "fast_checks": [false, true, false, false, false],
-      "slow_checks": [true, true, false, true, false, false],
-      "traits": ["和光市・朝霞・川越", "郊外住宅街", "ベッドタウン", "庶民的"],
-      "residents": ["ファミリー層", "通勤者", "地元住民"],
+      "route": [
+        [
+          35.7295,
+          139.7109
+        ],
+        [
+          35.755,
+          139.67
+        ],
+        [
+          35.7873,
+          139.6124
+        ],
+        [
+          35.7976,
+          139.593
+        ],
+        [
+          35.8316,
+          139.5775
+        ],
+        [
+          35.86,
+          139.55
+        ],
+        [
+          35.9062,
+          139.4857
+        ]
+      ],
+      "fast_checks": [
+        false,
+        true,
+        false,
+        false,
+        false
+      ],
+      "slow_checks": [
+        true,
+        true,
+        false,
+        true,
+        false,
+        false
+      ],
+      "traits": [
+        "和光市・朝霞・川越",
+        "郊外住宅街",
+        "ベッドタウン",
+        "庶民的"
+      ],
+      "residents": [
+        "ファミリー層",
+        "通勤者",
+        "地元住民"
+      ],
       "description": "池袋まで20〜30分のベッドタウン路線。和光市・朝霞・志木・川越とファミリー層が多い住宅街が続く。地域コミュニティの中での付き合いから、ゆっくり関係が育まれる。"
     },
     {
@@ -615,23 +2163,117 @@
       "city": "千葉",
       "lat": 35.7018,
       "lng": 139.9854,
-      "route": [[35.6950,139.8139],[35.7018,139.9854],[35.6817,140.0225],[35.6132,140.1134]],
-      "fast_checks": [false, true, true, true, false],
-      "slow_checks": [true, false, false, false, false, false],
-      "traits": ["船橋・津田沼", "駅前飲み屋街", "手頃な家賃", "ベッドタウン"],
-      "residents": ["若手社会人", "ファミリー層", "通勤者"],
+      "route": [
+        [
+          35.695,
+          139.8139
+        ],
+        [
+          35.6966,
+          139.855
+        ],
+        [
+          35.7018,
+          139.9854
+        ],
+        [
+          35.688,
+          140.0225
+        ],
+        [
+          35.66,
+          140.06
+        ],
+        [
+          35.6132,
+          140.1134
+        ]
+      ],
+      "fast_checks": [
+        false,
+        true,
+        true,
+        true,
+        false
+      ],
+      "slow_checks": [
+        true,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "traits": [
+        "船橋・津田沼",
+        "駅前飲み屋街",
+        "手頃な家賃",
+        "ベッドタウン"
+      ],
+      "residents": [
+        "若手社会人",
+        "ファミリー層",
+        "通勤者"
+      ],
       "description": "船橋・津田沼の駅前は居酒屋が充実し飲み文化がある。都心へのアクセスも良く一人暮らしも多いが、沿線にはファミリー層も多い。飲み文化と住宅街の性格が混在する路線。"
     },
     {
       "name": "阪急宝塚線沿い",
       "city": "大阪",
-      "lat": 34.8220,
+      "lat": 34.822,
       "lng": 135.4277,
-      "route": [[34.7230,135.4826],[34.7880,135.4690],[34.8220,135.4277],[34.8113,135.3546]],
-      "fast_checks": [false, true, false, false, false],
-      "slow_checks": [true, true, false, true, true, false],
-      "traits": ["豊中・池田・宝塚", "閑静な住宅街", "教育熱心", "上品"],
-      "residents": ["ファミリー層", "高所得層", "教育熱心な住民"],
+      "route": [
+        [
+          34.723,
+          135.4826
+        ],
+        [
+          34.761,
+          135.47
+        ],
+        [
+          34.788,
+          135.469
+        ],
+        [
+          34.822,
+          135.4377
+        ],
+        [
+          34.8113,
+          135.36
+        ],
+        [
+          34.805,
+          135.3446
+        ]
+      ],
+      "fast_checks": [
+        false,
+        true,
+        false,
+        false,
+        false
+      ],
+      "slow_checks": [
+        true,
+        true,
+        false,
+        true,
+        true,
+        false
+      ],
+      "traits": [
+        "豊中・池田・宝塚",
+        "閑静な住宅街",
+        "教育熱心",
+        "上品"
+      ],
+      "residents": [
+        "ファミリー層",
+        "高所得層",
+        "教育熱心な住民"
+      ],
       "description": "豊中・池田・宝塚と上品な住宅街が続く。梅田まで15〜25分だが、沿線はファミリー層と高所得の大人が中心。教育熱心で落ち着いた暮らしの中で、計画的な恋愛を好む。"
     },
     {
@@ -639,11 +2281,54 @@
       "city": "大阪",
       "lat": 34.8163,
       "lng": 135.5679,
-      "route": [[34.7230,135.4826],[34.7370,135.5170],[34.8163,135.5679],[34.8480,135.6171]],
-      "fast_checks": [false, true, false, false, false],
-      "slow_checks": [true, true, false, true, false, false],
-      "traits": ["茨木・高槻", "ベッドタウン", "京都と大阪の中間", "庶民的住宅街"],
-      "residents": ["ファミリー層", "通勤者", "地元住民"],
+      "route": [
+        [
+          34.723,
+          135.4826
+        ],
+        [
+          34.737,
+          135.517
+        ],
+        [
+          34.77,
+          135.55
+        ],
+        [
+          34.8163,
+          135.5679
+        ],
+        [
+          34.848,
+          135.6171
+        ]
+      ],
+      "fast_checks": [
+        false,
+        true,
+        false,
+        false,
+        false
+      ],
+      "slow_checks": [
+        true,
+        true,
+        false,
+        true,
+        false,
+        false
+      ],
+      "traits": [
+        "茨木・高槻",
+        "ベッドタウン",
+        "京都と大阪の中間",
+        "庶民的住宅街"
+      ],
+      "residents": [
+        "ファミリー層",
+        "通勤者",
+        "地元住民"
+      ],
       "description": "茨木・高槻と大阪〜京都間のベッドタウンが並ぶ。梅田まで20分で繁華街アクセスはあるが、沿線はファミリー層が多く、地域コミュニティの付き合いからゆっくり関係が育まれる。"
     },
     {
@@ -651,11 +2336,58 @@
       "city": "大阪",
       "lat": 34.8149,
       "lng": 135.6521,
-      "route": [[34.6970,135.5336],[34.7390,135.5640],[34.8149,135.6521],[34.8580,135.6853]],
-      "fast_checks": [false, true, false, false, false],
-      "slow_checks": [true, true, false, true, false, false],
-      "traits": ["枚方・樟葉", "ニュータウン", "京阪間ベッドタウン", "くずはモール"],
-      "residents": ["ファミリー層", "通勤者", "地元住民"],
+      "route": [
+        [
+          34.697,
+          135.5336
+        ],
+        [
+          34.72,
+          135.547
+        ],
+        [
+          34.739,
+          135.564
+        ],
+        [
+          34.77,
+          135.6
+        ],
+        [
+          34.8149,
+          135.6521
+        ],
+        [
+          34.858,
+          135.6853
+        ]
+      ],
+      "fast_checks": [
+        false,
+        true,
+        false,
+        false,
+        false
+      ],
+      "slow_checks": [
+        true,
+        true,
+        false,
+        true,
+        false,
+        false
+      ],
+      "traits": [
+        "枚方・樟葉",
+        "ニュータウン",
+        "京阪間ベッドタウン",
+        "くずはモール"
+      ],
+      "residents": [
+        "ファミリー層",
+        "通勤者",
+        "地元住民"
+      ],
       "description": "枚方・樟葉と大阪〜京都間の住宅街が続く。京橋・淀屋橋まで20〜30分だが、沿線はファミリー層中心。くずはモールなど郊外型の生活で、地域の中でゆっくり関係を築く。"
     },
     {
@@ -663,23 +2395,121 @@
       "city": "名古屋",
       "lat": 35.2802,
       "lng": 136.8728,
-      "route": [[35.1709,136.8815],[35.2802,136.8728],[35.3792,136.9438]],
-      "fast_checks": [false, true, false, false, false],
-      "slow_checks": [true, true, false, true, false, false],
-      "traits": ["岩倉・犬山", "郊外住宅街", "城下町", "車社会"],
-      "residents": ["ファミリー層", "地元住民", "車通勤者"],
+      "route": [
+        [
+          35.1709,
+          136.8815
+        ],
+        [
+          35.21,
+          136.88
+        ],
+        [
+          35.245,
+          136.876
+        ],
+        [
+          35.2802,
+          136.8728
+        ],
+        [
+          35.33,
+          136.91
+        ],
+        [
+          35.3792,
+          136.9438
+        ]
+      ],
+      "fast_checks": [
+        false,
+        true,
+        false,
+        false,
+        false
+      ],
+      "slow_checks": [
+        true,
+        true,
+        false,
+        true,
+        false,
+        false
+      ],
+      "traits": [
+        "岩倉・犬山",
+        "郊外住宅街",
+        "城下町",
+        "車社会"
+      ],
+      "residents": [
+        "ファミリー層",
+        "地元住民",
+        "車通勤者"
+      ],
       "description": "岩倉・犬山と名古屋北部の郊外住宅街。名駅まで20〜30分だが車社会の色が強く、沿線はファミリー層が中心。地域コミュニティや職場の付き合いから関係が始まる傾向。"
     },
     {
       "name": "鶴舞線沿い",
       "city": "名古屋",
-      "lat": 35.1460,
-      "lng": 136.9430,
-      "route": [[35.1660,136.8980],[35.1460,136.9430],[35.1377,136.9580],[35.1175,137.0128]],
-      "fast_checks": [false, true, true, false, true],
-      "slow_checks": [false, true, false, false, false, false],
-      "traits": ["八事・塩釜口・赤池", "大学が多い", "学生街", "住宅街"],
-      "residents": ["大学生", "若手社会人", "一人暮らし"],
+      "lat": 35.146,
+      "lng": 136.943,
+      "route": [
+        [
+          35.166,
+          136.898
+        ],
+        [
+          35.159,
+          136.915
+        ],
+        [
+          35.152,
+          136.933
+        ],
+        [
+          35.146,
+          136.943
+        ],
+        [
+          35.1377,
+          136.958
+        ],
+        [
+          35.125,
+          136.985
+        ],
+        [
+          35.1175,
+          137.0128
+        ]
+      ],
+      "fast_checks": [
+        false,
+        true,
+        true,
+        false,
+        true
+      ],
+      "slow_checks": [
+        false,
+        true,
+        false,
+        false,
+        false,
+        false
+      ],
+      "traits": [
+        "八事・塩釜口・赤池",
+        "大学が多い",
+        "学生街",
+        "住宅街"
+      ],
+      "residents": [
+        "大学生",
+        "若手社会人",
+        "一人暮らし"
+      ],
       "description": "名大・南山大・中京大など大学が集中する学生エリア。栄まで20分で繁華街アクセスはあり、18〜24歳の一人暮らしが多い。学生文化の中でカジュアルな出会いもあるが、落ち着いた住宅街の面もある。"
     }
   ]
